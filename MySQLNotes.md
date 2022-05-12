@@ -4,7 +4,7 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href ="#datatype">DataTYPE</a>
-  - Constraints
+  - <a href = "Constraints">Constraints</a>
 - [Functions](#functions)
 
 </br>
@@ -14,7 +14,7 @@
 
 ## Database and Tables
 
-### <a id="datatype">DataTYPE:</a>
+### <a id="DataTYPE">DataTYPE:</a>
 
     Number:						INT
                       			int(#)
