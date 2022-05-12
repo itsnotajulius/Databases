@@ -7,7 +7,6 @@
   - <a href = "#datatype">DataTYPE</a>
   - <a href = "#constraints">Constraints</a>
   - <a href = "#mysql-commandline">MySQL CommandLine</a>
-  - [Mysql](#mysql-commandlinemysql-commandline)
 
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
