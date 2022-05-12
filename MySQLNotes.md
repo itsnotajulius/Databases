@@ -209,6 +209,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 ### Relationships/Joins:
 
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
+
 Setting up relationships is set when creating a table or altering the column.
 
 ```sql
