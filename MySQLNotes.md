@@ -18,6 +18,7 @@
 
 ### [DataTYPE:](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
+```
     Number:						INT
                       			int(#)
                       			DECIMAL(digits#,deci#)
@@ -29,6 +30,7 @@
     							TIME							Format HH:MM:SS
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
+```
 
 ### Constraints
 
