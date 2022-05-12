@@ -1,5 +1,11 @@
 # **MYSQLNOTES:**
 
+## Sections
+
+[Creating Tables](#creating-tables)
+
+--
+
 ## Creating Tables
 
 ### DataTYPE:
@@ -60,7 +66,8 @@ Crete Tables: CREATE TABLE tablenames
 Delete tables: DROP TABLE tablename,tablename,..;
 List Tables: SHOW TABLES;
 
-ALTER:
+# ALTER:
+
 Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
 Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
 Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
@@ -115,28 +122,29 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 - Aggregate Functions:
 
-  1.  COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
-      GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
-      MIN: MIN(<coulumn_name>)
-      MAX: MAX(<coulumn_name>)
-      SUM: SUM(<coulumn_name>)
-      AVG: AVG(<coulumn_name>)
+  1COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
+  GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
+  MIN: MIN(<coulumn_name>)
+  MAX: MAX(<coulumn_name>)
+  SUM: SUM(<coulumn_name>)
+  AVG: AVG(<coulumn_name>)
 
 - Date Time Functions:
 
-  1.  Current Date: CURDATE()
-      Current time: CURTIME()
-      Now: NOW()
-      MINUTE: MINUTE(<coulumn_name>/'dateTimeFormat')
-      HOUR: HOUR(<coulumn_name>/'dateTimeFormat')
-      DAY: DAY(<coulumn_name>/'dateTimeFormat')
-      DAY NAME: DAYNAME(<coulumn_name>/'dateTimeFormat')
-      DAY OF WEEK: DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
-      DAY OF YEAR DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
-      MONTH: MONTH(<coulumn_name>/'dateTimeFormat')
-      MONTH NAME: MONTHNAME(<coulumn_name>/'dateTimeFormat')
-      DATE FORMAT: DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format
-      Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+  Current Date: CURDATE()
+  Current time: CURTIME()
+  Now: NOW()
+  MINUTE: MINUTE(<coulumn_name>/'dateTimeFormat')
+  HOUR: HOUR(<coulumn_name>/'dateTimeFormat')
+  DAY: DAY(<coulumn_name>/'dateTimeFormat')
+  DAY NAME: DAYNAME(<coulumn_name>/'dateTimeFormat')
+  DAY OF WEEK: DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
+  DAY OF YEAR DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
+  MONTH: MONTH(<coulumn_name>/'dateTimeFormat')
+  MONTH NAME: MONTHNAME(<coulumn_name>/'dateTimeFormat')
+  DATE FORMAT: DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
+  Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
+
       Date Add: DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
