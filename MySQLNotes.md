@@ -146,25 +146,26 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
 
 ### Date Time Functions:
 
-```sql
-  Current Date: CURDATE()
-  Current time: CURTIME()
-  Now: NOW()
-  MINUTE: MINUTE(<coulumn_name>/'dateTimeFormat')
-  HOUR: HOUR(<coulumn_name>/'dateTimeFormat')
-  DAY: DAY(<coulumn_name>/'dateTimeFormat')
-  DAY NAME: DAYNAME(<coulumn_name>/'dateTimeFormat')
-  DAY OF WEEK: DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
-  DAY OF YEAR DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
-  MONTH: MONTH(<coulumn_name>/'dateTimeFormat')
-  MONTH NAME: MONTHNAME(<coulumn_name>/'dateTimeFormat')
-  DATE FORMAT: DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
-  Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
+<```sql
+Current Date: CURDATE()
+Current time: CURTIME()
+Now: NOW()
+MINUTE: MINUTE(<coulumn_name>/'dateTimeFormat')
+HOUR: HOUR(<coulumn_name>/'dateTimeFormat')
+DAY: DAY(<coulumn_name>/'dateTimeFormat')
+DAY NAME: DAYNAME(<coulumn_name>/'dateTimeFormat')
+DAY OF WEEK: DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
+DAY OF YEAR DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
+MONTH: MONTH(<coulumn_name>/'dateTimeFormat')
+MONTH NAME: MONTHNAME(<coulumn_name>/'dateTimeFormat')
+DATE FORMAT: DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
+Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
 
       Date Add: DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
-```
+
+````
 
 ### Operators:
 
@@ -181,7 +182,7 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
       IN: IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
       IN: NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
-```
+````
 
 ### Flow Control Functions: [Info](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
@@ -223,14 +224,17 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
 
 ## Definiations:
 
-|Head|||
-CRUD: Create Read Update Delete
-SQL - Language to talk to database
-MySQL - uses SQL just has different features to other DBMS
+| <h2>Definitions:</h2> |     |                                                    |
+| --------------------- | --- | -------------------------------------------------: |
+| CRUD:                 |     |                          Create Read Update Delete |
+| SQL                   |     |                       Language to talk to database |
+| MySQL                 |     | Uses SQL just has different features to other DBMS |
 
 ## Database:
 
+```
     1. Collection of Data (Database)
     2. Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
     Columns - Names
     Rows - Data
+```
