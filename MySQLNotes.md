@@ -85,9 +85,9 @@ Modify Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 
 
 
-Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
-INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
-Multiple Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
+Insert: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
+								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
+Multiple Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
 Show Table: SELECT \* FROM <tablename ?WHERE?;
 Show columns: SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
@@ -232,7 +232,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 | Database:             |     |                                                                      Collection of Data (Database) |
 | MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 
-    Columns - Names
+    |Columns||Headers/
     Rows - Data
 
 ```
