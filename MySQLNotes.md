@@ -46,6 +46,7 @@
 
 ### MySQL:
 
+```sql
     Run query:					source filename.sql; - If in same directory
     							source path/<filename>.sql
     List DB:					SHOW databases;
@@ -54,10 +55,11 @@
     Open DB:					Use <db_name>;
     Currect DB:					SELECT database();
     Exit DB:					exit
+```
 
 ### Table:
 
-```
+```sql
 	Crete Tables: 				CREATE TABLE tablenames
 								(
 										<coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
@@ -70,7 +72,7 @@
 
 ### ALTER:
 
-```
+```sql
 Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
 Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
 Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
@@ -104,7 +106,7 @@ Warnings: SHOW WARNINGS;
 
 ### String Functions:
 
-```
+```sql
 NOTE: Cause they are functions they can be used by each other.
 
 CONCAT: CONCAT(<coulumn_name, StrFUNC , text, number,....)
@@ -119,7 +121,7 @@ CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 
 ### Refining Select:
 
-```
+```sql
 WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
 DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
 ORDER: ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
@@ -130,7 +132,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 ### Aggregate Functions:
 
-```
+```sql
   1COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
   GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
   MIN: MIN(<coulumn_name>)
@@ -141,7 +143,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 ### Date Time Functions:
 
-```
+```sql
   Current Date: CURDATE()
   Current time: CURTIME()
   Now: NOW()
