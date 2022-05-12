@@ -223,9 +223,10 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
 
 ## Definiations:
 
-    CRUD: Create Read Update Delete
-    SQL - Language to talk to database
-    MySQL - uses SQL just has different features to other DBMS
+||||
+CRUD: Create Read Update Delete
+SQL - Language to talk to database
+MySQL - uses SQL just has different features to other DBMS
 
 ## Database:
 
