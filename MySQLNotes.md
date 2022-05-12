@@ -4,6 +4,7 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href = "#datatype">DataTYPE</a>
+  - <a href = "#constraints">DataTYPE</a>
   - [Constraints](#constraintshttpswwww3schoolscomsqlsqlconstraintsasp)
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
