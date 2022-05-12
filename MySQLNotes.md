@@ -178,7 +178,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 ```
 
-### Flow Control Functions:
+### Flow Control Functions: [Info](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
 ```sql
 	If_Statments: 						If(equation,trueAns,falseAns)
