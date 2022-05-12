@@ -114,7 +114,7 @@ Warnings: SHOW WARNINGS;
 
 ## Functions
 
-### [String Functions:](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html)
+### <a id="String Functions" href = "https://dev.mysql.com/doc/refman/8.0/en/string-functions.html">String Functions:</a>
 
 ```sql
 NOTE: Cause they are functions they can be used by each other.
