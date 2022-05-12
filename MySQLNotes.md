@@ -136,7 +136,7 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
 ### Aggregate Functions:
 
 ```sql
-  COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
+  COUNT: 								COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
   GROUP_BY: 							GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
   MIN: 									MIN(<coulumn_name>)
   MAX: 									MAX(<coulumn_name>)
