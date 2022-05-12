@@ -3,7 +3,7 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-  - Data
+  - <a href ="datatype">Data</a>
 - [Functions](#functions)
 
 </br>
