@@ -4,9 +4,9 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href ="#datatype">DataTYPE</a>
-  - <a href = "Constraints">Constraints</a>
+  - <a href = "#Constraints">Constraints</a>
 - [Functions](#functions)
-  - [String Functions](#string-functions)
+  - <a href = >String Functions](#string-functions)
 
 </br>
 </br>
