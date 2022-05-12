@@ -6,6 +6,7 @@
   - <a href ="#datatype">DataTYPE</a>
   - <a href = "Constraints">Constraints</a>
 - [Functions](#functions)
+  - String Functions
 
 </br>
 </br>
