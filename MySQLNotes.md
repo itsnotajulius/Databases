@@ -3,7 +3,7 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-  - <a href ="#datatype">DataTYPE</a>
+  - DataTYPE
   - [Constraints](#constraintshttpswwww3schoolscomsqlsqlconstraintsasp)
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
@@ -16,7 +16,7 @@
 
 ## Database and Tables
 
-### [DataTYPE:](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+### DataTYPE
 
 ```
     Number:						INT
