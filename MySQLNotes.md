@@ -192,11 +192,11 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 - Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
 
 ```sql
-  1.  Minus: #-#
-      Multiply: #\*#
-      Divide: #/# (Calculed with BIGINT)
-      DIV(3,Div#) (Converted to DECIMAL to Cal and Convert to BIGINT)
-      Remainder: MOD(#,Div#)
+  1.  Minus: 					#-#
+      Multiply: 				#\*#
+      Divide: 					#/# (Calculed with BIGINT)
+      							DIV(3,Div#) (Converted to DECIMAL to Cal and Convert to BIGINT)
+      Remainder: 				MOD(#,Div#)
 ```
 
 - Relationships/Joins:
