@@ -184,7 +184,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 ````
 
-### Flow Control Functions: [Info](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
+### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
 ```sql
 	If_Statments: 						If(equation,trueAns,falseAns)
@@ -224,8 +224,6 @@ Setting up relationships is set when creating a table or altering the column.
 ```
 
 # THOERY
-
-## Definiations:
 
 | <h2>Definitions:</h2> |     |                                                                                                    |
 | --------------------- | --- | -------------------------------------------------------------------------------------------------: |
