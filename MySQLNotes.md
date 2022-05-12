@@ -1,13 +1,10 @@
-## Database:
+# **MYSQLNOTES:**
 
-    1. Collection of Data (Database)
-    2. Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
-    Columns - Names
-    Rows - Data
+## Creating Tables
 
-# DataTYPE:
+### DataTYPE:
 
-    1. Number:					INT
+    Number:						INT
                       			int(#)
                       			DECIMAL(digits#,deci#)
                       			FLOAT							7 digits issues
@@ -19,7 +16,7 @@
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
 
-# Constraints:
+### Constraints:
 
     Null:
     	Setting Null:			Mean not defined do nothing
@@ -41,88 +38,80 @@
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
-# Definiations:
-
-    CRUD:					Create Read Update Delete
-    SQL - Language to talk to database
-    MySQL - uses SQL just has different features to other DBMS
-
-## Goormio:
-
-    Start MySQL:				mysql-ctl cli
-
-# MySQL:
+## MySQL:
 
     Run query:					source filename.sql; - If in same directory
     							source path/<filename>.sql
-    1. List DB:					SHOW databases;
+    List DB:					SHOW databases;
     Create DB:					CREATE DATATBASE <db_name>;
     Detele DB:					DROP DATABASE <db_name>;
     Open DB:					Use <db_name>;
     Currect DB:					SELECT database();
     Exit DB:					exit
 
-- Table:
+## Table:
 
-  1.  Crete Tables: CREATE TABLE <tablenames
-      (
-      <coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
-      <coulumn_name> <data_type>
-      ?Constraints?
-      );
-      Delete tables: DROP TABLE tablename,tablename,..;
-      List Tables: SHOW TABLES;
+Crete Tables: CREATE TABLE <tablenames
+(
+<coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
+<coulumn_name> <data_type>
+?Constraints?
+);
+Delete tables: DROP TABLE tablename,tablename,..;
+List Tables: SHOW TABLES;
 
-  ALTER:
-  Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
-  Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
-  Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
-  Drop Columns: ALTER TABLE <tablename DROP <coulumn_name>;
-  Drop Constraint: ALTER TABLE <tablename DROP ?Constraint?
-  Modify Col: ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
-  Modify Col: ALTER TABLE <tablename ALTER <coulumn_name> dataType;
+ALTER:
+Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
+Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
+Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
+Drop Columns: ALTER TABLE <tablename DROP <coulumn_name>;
+Drop Constraint: ALTER TABLE <tablename DROP ?Constraint?
+Modify Col: ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
+Modify Col: ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 
-  Show Columns SHOW COLUMNS FROM <tablename;
-  DESC <tablename;
+Show Columns SHOW COLUMNS FROM <tablename;
+DESC <tablename;
 
-  Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
-  INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
-  Multiple Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
+Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
+INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
+Multiple Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
-  Show Table: SELECT \* FROM <tablename ?WHERE?;
-  Show columns: SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
-  SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
-  SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
-  SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?AggFunc? ?RefineSel?;
-  SELECT <coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
+Show Table: SELECT \* FROM <tablename ?WHERE?;
+Show columns: SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
+SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
+SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
+SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?AggFunc? ?RefineSel?;
+SELECT <coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
 
-  Update: UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
+Update: UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
 
-  Delete: DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
-  Delete all: DELETE FROM cats;
-  Warnings: SHOW WARNINGS;
+Delete: DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
+Delete all: DELETE FROM cats;
+Warnings: SHOW WARNINGS;
 
-- String Functions:
+---
 
-  1.  NOTE: Cause they are functions they can be used by each other.
+### String Functions:
 
-  CONCAT: CONCAT(<coulumn_name, StrFUNC , text, number,....)
-  CONCAT_WS: CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
-  SUBSTRING: SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
-  SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
-  SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Negative means start from the back
-  REPLACE: REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
-  REVERSE: REVERSE(<coulumn_name>/StrFUNC/Text)
-  CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+1.  NOTE: Cause they are functions they can be used by each other.
 
-- Refining Select:
+CONCAT: CONCAT(<coulumn_name, StrFUNC , text, number,....)
+CONCAT_WS: CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
+SUBSTRING: SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
+SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
+SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Negative means start from the back
+REPLACE: REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
+REVERSE: REVERSE(<coulumn_name>/StrFUNC/Text)
+CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 
-  1.  WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
-      DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
-      ORDER: ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
-      LIMIT: LIMIT #;
-      LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-      Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+### Refining Select:
+
+WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
+DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
+ORDER: ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
+LIMIT: LIMIT #;
+LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 
 - Aggregate Functions:
 
@@ -194,3 +183,18 @@
       Left Join: FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
       Right Join: FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
       Cascade: ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+
+# THOERY
+
+## Definiations:
+
+    CRUD:					Create Read Update Delete
+    SQL - Language to talk to database
+    MySQL - uses SQL just has different features to other DBMS
+
+## Database:
+
+    1. Collection of Data (Database)
+    2. Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
+    Columns - Names
+    Rows - Data
