@@ -128,7 +128,7 @@ LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/
 Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 ```
 
-- Aggregate Functions:
+### Aggregate Functions:
 
 ```
   1COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
@@ -139,7 +139,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
   AVG: AVG(<coulumn_name>)
 ```
 
-- Date Time Functions:
+### Date Time Functions:
 
 ```
   Current Date: CURDATE()
@@ -161,9 +161,9 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 ```
 
-- Logical Operators:
+### Logical Operators:
 
-```
+```mysql
   1.  Equal =
       Not Equal !=
       Greater Than: > >=
@@ -178,10 +178,10 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 ```
 
-- Flow Control Functions:
+### Flow Control Functions:
 
 ```
-  1.  If: If(equation,trueAns,falseAns)
+  1.  If: **If(equation,trueAns,falseAns)**
       IfNull IFNULL(checkIfNull, answerIfNull)
       CASE: CASE
       WHEN Logical THEN 'answer'
