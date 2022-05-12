@@ -54,7 +54,7 @@
 ### MySQL:
 
 ```sql
-    Run query:					source filename.sql; - If in same directory
+    Run query files:			source filename.sql; - If in same directory
     							source path/<filename>.sql
     List DB:					SHOW databases;
     Create DB:					CREATE DATATBASE <db_name>;
