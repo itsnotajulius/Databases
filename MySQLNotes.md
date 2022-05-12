@@ -62,7 +62,7 @@
 ```sql
 	Crete Tables: 				CREATE TABLE tablenames
 								(
-										<coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
+										<coulumn_name> <data_type> ?Constraints? ?Constraints?,
 										<coulumn_name> <data_type>
 										?Constraints?
 								);
@@ -105,6 +105,8 @@ Warnings: SHOW WARNINGS;
 
 ---
 
+##Functions
+
 ### String Functions:
 
 ```sql
@@ -123,23 +125,23 @@ CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ### Refining Select:
 
 ```sql
-WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
-DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
-ORDER: ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
-LIMIT: LIMIT #;
-LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+WHERE: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
+DISTINCT: 								SELECT DISTINCT <coulumn_name>/StrFUNC
+ORDER: 									ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
+LIMIT: 									LIMIT #;
+LIKE: 									WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 ```
 
 ### Aggregate Functions:
 
 ```sql
-  1COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
-  GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
-  MIN: MIN(<coulumn_name>)
-  MAX: MAX(<coulumn_name>)
-  SUM: SUM(<coulumn_name>)
-  AVG: AVG(<coulumn_name>)
+  COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
+  GROUP_BY: 							GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
+  MIN: 									MIN(<coulumn_name>)
+  MAX: 									MAX(<coulumn_name>)
+  SUM: 									SUM(<coulumn_name>)
+  AVG: 									AVG(<coulumn_name>)
 ```
 
 ### Date Time Functions:
