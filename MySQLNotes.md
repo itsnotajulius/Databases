@@ -8,10 +8,10 @@
 # DataTYPE:
 
     1. Number:					INT
-                      int(#)
-                      DECIMAL(digits#,deci#)
-                      FLOAT							7 digits issues
-                      DOUBLE							Bigger float issues bigger than 15 digits
+                      			int(#)
+                      			DECIMAL(digits#,deci#)
+                      			FLOAT							7 digits issues
+                      			DOUBLE							Bigger float issues bigger than 15 digits
     String:						   VARCHAR(#)
     							      CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
     Date and Time:				DATE							Format YYYY-MM-DD
