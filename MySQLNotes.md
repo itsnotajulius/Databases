@@ -19,10 +19,9 @@
   TIMESTAMP Same as DATETIME but smaller>
 
 * Constraints:
-
-  1.  Null:
-      Setting Null: Mean not defined do nothing
-      No Null: NOT NULL
+  Null:
+  Setting Null: Mean not defined do nothing
+  No Null: NOT NULL
 
   Default:
   Setting Defailt: DEFAULT datatypeDefault
