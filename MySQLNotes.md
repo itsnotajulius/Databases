@@ -232,7 +232,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 | Database:             |     |                                                                      Collection of Data (Database) |
 | MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 | Columns               |     |                                                                          Headers/Col_Name/Variable |
-| Rows                  |     |                                                                                             - Data |
+| Rows                  |     |                                                                                               Data |
 
 ```
 
