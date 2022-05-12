@@ -2,8 +2,7 @@
 
 ## Sections
 
-[Database and Tables](#database-and-tables)
-
+[Database and Tables](#database-and-tables) - Data
 [Functions](#functions)
 
 </br>
@@ -13,7 +12,7 @@
 
 ## Database and Tables
 
-### DataTYPE:
+### <a id="datatype">DataTYPE:</a>
 
     Number:						INT
                       			int(#)
