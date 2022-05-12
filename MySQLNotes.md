@@ -4,8 +4,6 @@
 
 [Creating Tables](#creating-tables)
 
-[Datatypes](#datatype)
-
 --
 
 ## Creating Tables
@@ -59,14 +57,16 @@
 
 # Table:
 
-Crete Tables: CREATE TABLE tablenames
-(
-<coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
-<coulumn_name> <data_type>
-?Constraints?
-);
-Delete tables: DROP TABLE tablename,tablename,..;
-List Tables: SHOW TABLES;
+```
+	Crete Tables: 				CREATE TABLE tablenames
+								(
+										<coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
+										<coulumn_name> <data_type>
+										?Constraints?
+								);
+	Delete tables: DROP TABLE tablename,tablename,..;
+	List Tables: SHOW TABLES;
+```
 
 # ALTER:
 
