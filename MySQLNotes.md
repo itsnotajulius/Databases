@@ -3,7 +3,7 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-  - <a href="#datatype">DataTYPE</a>
+  - <a href ="#datatype">DataTYPE</a>
   - <a href="#Constraints">Constraints</a>
     MySQL Commandline
 - [Functions](#functions)
@@ -52,7 +52,7 @@
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
-### <a id = "MySQL Commandline">MySQL Commandline:</a>
+### MySQL Commandline
 
 ```sql
     Run query files:			source filename.sql; - If in same directory
