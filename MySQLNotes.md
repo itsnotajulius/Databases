@@ -195,7 +195,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 										END ?AS?
 ```
 
-### Numeric Functions And Operators: [Info](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
+### [Numeric Functions And Operators:](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
 ```sql
  	Plus: 							#+#
@@ -209,7 +209,6 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 ### Relationships/Joins:
 
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
-
 Setting up relationships is set when creating a table or altering the column.
 
 ```sql
