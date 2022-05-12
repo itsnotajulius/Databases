@@ -12,8 +12,8 @@
                       			DECIMAL(digits#,deci#)
                       			FLOAT							7 digits issues
                       			DOUBLE							Bigger float issues bigger than 15 digits
-    String:						   VARCHAR(#)
-    							      CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
+    String:						VARCHAR(#)
+    							CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
     Date and Time:				DATE							Format YYYY-MM-DD
     							TIME							Format HH:MM:SS
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
@@ -21,7 +21,7 @@
 
 # Constraints:
 
-    1. Null:
+    Null:
     	Setting Null:			Mean not defined do nothing
     	No Null:				NOT NULL
 
