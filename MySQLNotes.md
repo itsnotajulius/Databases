@@ -4,6 +4,8 @@
 
 [Creating Tables](#creating-tables)
 
+[Datatypes](#datatype)
+
 --
 
 ## Creating Tables
