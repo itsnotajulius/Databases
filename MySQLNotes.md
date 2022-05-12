@@ -231,8 +231,8 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 | MySQL                 |     |                                                 Uses SQL just has different features to other DBMS |
 | Database:             |     |                                                                      Collection of Data (Database) |
 | MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
+| Columns               |     |                                                                          Headers/Col_Name/Variable |
 
-    |Columns||Headers/
     Rows - Data
 
 ```
