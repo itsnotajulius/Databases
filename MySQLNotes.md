@@ -4,7 +4,7 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href ="#datatype">DataTYPE</a>
-  - Constraints
+  - [Constraints](#constraintshttpswwww3schoolscomsqlsqlconstraintsasp)
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
