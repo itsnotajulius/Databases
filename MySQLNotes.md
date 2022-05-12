@@ -14,7 +14,7 @@
 
 ## Database and Tables
 
-### <a id="DataTYPE">DataTYPE:</a>
+### DataTYPE
 
     Number:						INT
                       			int(#)
