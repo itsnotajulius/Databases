@@ -3,7 +3,7 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-  - [DataTYPE](#datatypehttpsdevmysqlcomdocrefman80endata-typeshtml)
+  - <a href = "#datatype">DataTYPE<>
   - [Constraints](#constraintshttpswwww3schoolscomsqlsqlconstraintsasp)
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
