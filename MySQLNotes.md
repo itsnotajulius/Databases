@@ -16,7 +16,7 @@
 
 ## Database and Tables
 
-### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+### [DataTYPE:](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
     Number:						INT
                       			int(#)
@@ -30,7 +30,7 @@
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
 
-### <a id="Constraints" href="https://www.w3schools.com/sql/sql_constraints.asp" >Constraints</a>
+### Constraints:
 
     Null:
     	Setting Null:			Mean not defined do nothing
