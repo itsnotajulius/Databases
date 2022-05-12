@@ -227,7 +227,7 @@ Setting up relationships is set when creating a table or altering the column.
 
 | <h2>Definitions:</h2> |     |                                                                                                    |
 | --------------------- | --- | -------------------------------------------------------------------------------------------------: |
-| CRUD:                 |     |                                                                          Create Read Update Delete |
+| **CRUD:**             |     |                                                                          Create Read Update Delete |
 | SQL                   |     |                                                                       Language to talk to database |
 | MySQL                 |     |                                                 Uses SQL just has different features to other DBMS |
 | Database:             |     |                                                                      Collection of Data (Database) |
