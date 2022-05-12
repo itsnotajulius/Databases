@@ -1,22 +1,22 @@
-- Database:
+# Database:
 
-  1.  Collection of Data (Database)
-  2.  Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
-      Columns - Names
-      Rows - Data
+1.  Collection of Data (Database)
+2.  Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
+    Columns - Names
+    Rows - Data
 
 - DataTYPE:
-  1.  Number: INT
-      int(#)
-      DECIMAL(digits#,deci#)
-      FLOAT 7 digits issues
-      DOUBLE Bigger float issues bigger than 15 digits
-      String: VARCHAR(#)
-      CHAR(#) Fix length stored with spaces of set size can be 0 to 255
-      Date and Time: DATE Format YYYY-MM-DD
-      TIME Format HH:MM:SS
-      DATETIME Format YYYY-MM-DD HH:MM:SS
-      TIMESTAMP Same as DATETIME but smaller
+  1. Number: INT
+     int(#)
+     DECIMAL(digits#,deci#)
+     FLOAT 7 digits issues
+     DOUBLE Bigger float issues bigger than 15 digits
+     String: VARCHAR(#)
+     CHAR(#) Fix length stored with spaces of set size can be 0 to 255
+     Date and Time: DATE Format YYYY-MM-DD
+     TIME Format HH:MM:SS
+     DATETIME Format YYYY-MM-DD HH:MM:SS
+     TIMESTAMP Same as DATETIME but smaller>
 - Constraints:
 
   1.  Null:
