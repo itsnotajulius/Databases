@@ -3,8 +3,7 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-
-- Data
+  - Data
 - [Functions](#functions)
 
 </br>
