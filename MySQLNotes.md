@@ -5,20 +5,20 @@
         Columns - Names
         Rows - Data
 
-DataTYPE:
-Number: INT
-int(#)
-DECIMAL(digits#,deci#)
-FLOAT 7 digits issues
-DOUBLE Bigger float issues bigger than 15 digits
-String: VARCHAR(#)
-CHAR(#) Fix length stored with spaces of set size can be 0 to 255
-Date and Time: DATE Format YYYY-MM-DD
-TIME Format HH:MM:SS
-DATETIME Format YYYY-MM-DD HH:MM:SS
-TIMESTAMP Same as DATETIME but smaller>
+- DataTYPE:
+  1.Number: INT
+  int(#)
+  DECIMAL(digits#,deci#)
+  FLOAT 7 digits issues
+  DOUBLE Bigger float issues bigger than 15 digits
+  String: VARCHAR(#)
+  CHAR(#) Fix length stored with spaces of set size can be 0 to 255
+  Date and Time: DATE Format YYYY-MM-DD
+  TIME Format HH:MM:SS
+  DATETIME Format YYYY-MM-DD HH:MM:SS
+  TIMESTAMP Same as DATETIME but smaller>
 
-- Constraints:
+* Constraints:
   Null:
   Setting Null: Mean not defined do nothing
   No Null: NOT NULL
@@ -38,14 +38,14 @@ TIMESTAMP Same as DATETIME but smaller>
   UNIQUE (<coulumn_name>,<coulumn_name>) (Used with constraint)
   Check/Limit: CHECK (expression)
 
-- SQL vs MYSQL:
+* SQL vs MYSQL:
   1.  SQL - Language to talk to database
       MySQL - uses SQL just has different features to other DBMS
-- Definiations:
+* Definiations:
   1.  CRUD: Create Read Update Delete
-- Goormio:
+* Goormio:
   1.  Start MySQL: mysql-ctl cli
-- MySQL:
+* MySQL:
   1.  Run query: source filename.sql; - If in same directory
       source path/<filename>.sql
   1.  List DB: SHOW databases;
@@ -54,7 +54,7 @@ TIMESTAMP Same as DATETIME but smaller>
       Open DB: Use <db_name>;
       Currect DB: SELECT database();
       Exit DB: exit
-- Table:
+* Table:
 
   1.  Crete Tables: CREATE TABLE <tablenames
       (
@@ -92,7 +92,7 @@ TIMESTAMP Same as DATETIME but smaller>
   Delete all: DELETE FROM cats;
   Warnings: SHOW WARNINGS;
 
-- String Functions:
+* String Functions:
 
   1.  NOTE: Cause they are functions they can be used by each other.
 
@@ -105,7 +105,7 @@ TIMESTAMP Same as DATETIME but smaller>
   REVERSE: REVERSE(<coulumn_name>/StrFUNC/Text)
   CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 
-- Refining Select:
+* Refining Select:
 
   1.  WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
       DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
@@ -114,14 +114,14 @@ TIMESTAMP Same as DATETIME but smaller>
       LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
       Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 
-- Aggregate Functions:
+* Aggregate Functions:
   1.  COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
       GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
       MIN: MIN(<coulumn_name>)
       MAX: MAX(<coulumn_name>)
       SUM: SUM(<coulumn_name>)
       AVG: AVG(<coulumn_name>)
-- Date Time Functions:
+* Date Time Functions:
   1.  Current Date: CURDATE()
       Current time: CURTIME()
       Now: NOW()
@@ -138,7 +138,7 @@ TIMESTAMP Same as DATETIME but smaller>
       Date Add: DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
-- Logical Operators:
+* Logical Operators:
   1.  Equal =
       Not Equal !=
       Greater Than: > >=
@@ -151,20 +151,20 @@ TIMESTAMP Same as DATETIME but smaller>
       IN: IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
       IN: NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
-- Flow Control Functions:
+* Flow Control Functions:
   1.  If: If(equation,trueAns,falseAns)
       IfNull IFNULL(checkIfNull, answerIfNull)
       CASE: CASE
       WHEN Logical THEN 'answer'
       ELSE 'falseAnswer'
       END ?AS?
-- Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
+* Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
   1.  Minus: #-#
       Multiply: #\*#
       Divide: #/# (Calculed with BIGINT)
       DIV(3,Div#) (Converted to DECIMAL to Cal and Convert to BIGINT)
       Remainder: MOD(#,Div#)
-- Relationships/Joins:
+* Relationships/Joins:
   1.  One to One
       One to Many
       Many to Many
