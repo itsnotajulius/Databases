@@ -17,6 +17,7 @@
   TIME Format HH:MM:SS
   DATETIME Format YYYY-MM-DD HH:MM:SS
   TIMESTAMP Same as DATETIME but smaller>
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
 * Constraints:
   Null:
