@@ -6,7 +6,6 @@
   - <a href ="#datatype">DataTYPE</a>
   - <a href="#Constraints">Constraints</a>
   - [Mysql](#mysql-commandlinemysql-commandline)
-    MySQL Commandline
 - [Functions](#functions)
   - <a href = >String Functions](#string-functions)
 
