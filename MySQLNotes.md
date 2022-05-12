@@ -4,7 +4,7 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href ="#datatype">DataTYPE</a>
-  - <a href ="#Constraints:">Constraints</a>
+  - <a href ="">Constraints</a>
 - [Functions](#functions)
   - <a href = >String Functions](#string-functions)
 
@@ -29,7 +29,7 @@
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
 
-### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
+### <a id="Constraints">Constraints</a>
 
     Null:
     	Setting Null:			Mean not defined do nothing
