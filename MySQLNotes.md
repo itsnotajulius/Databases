@@ -146,7 +146,7 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
 
 ### Date Time Functions:
 
-<```sql
+```sql
 Current Date: CURDATE()
 Current time: CURTIME()
 Now: NOW()
@@ -165,7 +165,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
       Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 
-````
+```
 
 ### Operators:
 
@@ -182,7 +182,7 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
       IN: IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
       IN: NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
-````
+```
 
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
