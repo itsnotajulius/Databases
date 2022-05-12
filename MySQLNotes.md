@@ -105,7 +105,7 @@ Warnings: SHOW WARNINGS;
 
 ---
 
-##Functions
+## Functions
 
 ### String Functions:
 
