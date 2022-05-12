@@ -4,7 +4,7 @@
 
 - [Database and Tables](#database-and-tables)
   - <a href ="#datatype">DataTYPE</a>
-  - <a href="#Constraints">Constraints</a>
+  - Constraints
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
@@ -32,7 +32,7 @@
     							TIMESTAMP						Same as DATETIME but smaller
 ```
 
-### Constraints
+### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
 
     Null:
     	Setting Null:			Mean not defined do nothing
