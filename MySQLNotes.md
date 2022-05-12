@@ -2,11 +2,11 @@
 
 ## Sections
 
-[Creating Tables](#creating-tables)
+[Database and Tables](#database-and-tables)
 
 --
 
-## Creating Tables
+## Database and Tables
 
 ### DataTYPE:
 
