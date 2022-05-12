@@ -3,8 +3,8 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
-  - <a href ="#datatype">DataTYPE</a>
-  - <a href ="#Constraints">Constraints</a>
+  - <a href="#datatype">DataTYPE</a>
+  - <a href="#Constraints">Constraints</a>
     MySQL Commandline
 - [Functions](#functions)
   - <a href = >String Functions](#string-functions)
