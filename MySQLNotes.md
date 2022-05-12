@@ -107,19 +107,19 @@ Warnings: SHOW WARNINGS;
 
 ## Functions
 
-### String Functions:
+### [String Functions:](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html)
 
 ```sql
 NOTE: Cause they are functions they can be used by each other.
 
-CONCAT: 						CONCAT(<coulumn_name, StrFUNC , text, number,....)
-CONCAT_WS: 						CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
-SUBSTRING: 						SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
-								SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
-								SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
-REPLACE: 						REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
-REVERSE: 						REVERSE(<coulumn_name>/StrFUNC/Text)
-CHAR_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+CONCAT: 							CONCAT(<coulumn_name, StrFUNC , text, number,....)
+CONCAT_WS: 							CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
+SUBSTRING: 							SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
+									SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
+									SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
+REPLACE: 							REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
+REVERSE: 							REVERSE(<coulumn_name>/StrFUNC/Text)
+Row_Data_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ```
 
 ### Refining Select:
