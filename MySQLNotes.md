@@ -224,17 +224,17 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 
 ## Definiations:
 
-| <h2>Definitions:</h2> |     |                                                    |
-| --------------------- | --- | -------------------------------------------------: |
-| CRUD:                 |     |                          Create Read Update Delete |
-| SQL                   |     |                       Language to talk to database |
-| MySQL                 |     | Uses SQL just has different features to other DBMS |
+| <h2>Definitions:</h2> |     |                                                                                                    |
+| --------------------- | --- | -------------------------------------------------------------------------------------------------: |
+| CRUD:                 |     |                                                                          Create Read Update Delete |
+| SQL                   |     |                                                                       Language to talk to database |
+| MySQL                 |     |                                                 Uses SQL just has different features to other DBMS |
+| Database:             |     |                                                                      Collection of Data (Database) |
+| MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 
-## Database:
-
-```
-    1. Collection of Data (Database)
-    2. Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite,
     Columns - Names
     Rows - Data
+
+```
+
 ```
