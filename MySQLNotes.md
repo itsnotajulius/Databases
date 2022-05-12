@@ -163,7 +163,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 ### Logical Operators:
 
-```mysql
+```sql
   1.  Equal =
       Not Equal !=
       Greater Than: > >=
