@@ -41,8 +41,6 @@
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
-# SQL vs MYSQL:
-
 # Definiations:
 
     CRUD:					Create Read Update Delete
