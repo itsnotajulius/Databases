@@ -189,28 +189,29 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 										END ?AS?
 ```
 
-- Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
+### Numeric Functions And Operators: [Info](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
 ```sql
-  1.  Minus: 							#-#
-      Multiply: 						#\*#
-      Divide: 							#/# (Calculed with BIGINT)
-      									DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
-      Remainder: 						MOD(#,Div#)
+ 	Plus: 							#+#
+    Minus: 							#-#
+	Multiply: 						#\*#
+	Divide: 							#/# (Calculed with BIGINT)
+									DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
+	Remainder: 						MOD(#,Div#)
 ```
 
-- Relationships/Joins:
+### Relationships/Joins:
 
 ```sql
     One_to_One
 	One_to_Many
 	Many_to_Many
-	Cross_Joins: 			FROM <tablename,<tablename; (Just joins everything)
-	Implicit_Join: 			FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
-	Explicit_Join: 			FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Left_Join: 				FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Right_Join: 			FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Cascade: 				ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+	Cross_Joins: 					FROM <tablename,<tablename; (Just joins everything)
+	Implicit_Join: 					FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
+	Explicit_Join: 					FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Left_Join: 						FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Right_Join: 					FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Cascade: 						ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
 # THOERY
