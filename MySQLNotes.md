@@ -30,7 +30,7 @@
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
 
-### <a id="Constraints" href = "https://www.w3schools.com/sql/sql_constraints.asp" >Constraints</a>
+### <a id="Constraints" href="https://www.w3schools.com/sql/sql_constraints.asp" >Constraints</a>
 
     Null:
     	Setting Null:			Mean not defined do nothing
