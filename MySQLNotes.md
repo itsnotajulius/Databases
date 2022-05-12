@@ -144,7 +144,7 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
   AVG: 									AVG(<coulumn_name>)
 ```
 
-### Date Time Functions:
+### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
 
 ```sql
 Current Date: CURDATE()
