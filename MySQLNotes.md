@@ -133,7 +133,7 @@ LIKE: 									WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endTe
 Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 ```
 
-### Aggregate Functions:
+### [Aggregate Functions:](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions-and-modifiers.html)
 
 ```sql
   COUNT: 								COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
