@@ -43,20 +43,19 @@
 
 # SQL vs MYSQL:
 
-    1. SQL - Language to talk to database
-    MySQL - uses SQL just has different features to other DBMS
-
 # Definiations:
 
-    1. CRUD:					Create Read Update Delete
+    CRUD:					Create Read Update Delete
+    SQL - Language to talk to database
+    MySQL - uses SQL just has different features to other DBMS
 
 ## Goormio:
 
-    1. Start MySQL:				mysql-ctl cli
+    Start MySQL:				mysql-ctl cli
 
 # MySQL:
 
-    1. Run query:				source filename.sql; - If in same directory
+    Run query:					source filename.sql; - If in same directory
     							source path/<filename>.sql
     1. List DB:					SHOW databases;
     Create DB:					CREATE DATATBASE <db_name>;
