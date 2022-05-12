@@ -191,7 +191,7 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 - Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
 
-```
+```sql
   1.  Minus: #-#
       Multiply: #\*#
       Divide: #/# (Calculed with BIGINT)
@@ -201,16 +201,16 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 
 - Relationships/Joins:
 
-```
-  1.  One to One
-      One to Many
-      Many to Many
-      Cross Joins: FROM <tablename,<tablename; (Just joins everything)
-      Implicit Join: FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
-      Explicit Join: FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-      Left Join: FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-      Right Join: FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-      Cascade: ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+```sql
+    One_to_One
+	One_to_Many
+	Many_to_Many
+	Cross_Joins: 			FROM <tablename,<tablename; (Just joins everything)
+	Implicit_Join: 			FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
+	Explicit_Join: 			FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Left_Join: 				FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Right_Join: 			FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Cascade: 				ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
 # THOERY
