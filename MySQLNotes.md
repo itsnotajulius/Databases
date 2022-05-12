@@ -6,7 +6,7 @@
   - <a href ="#datatype">DataTYPE</a>
   - <a href = "Constraints">Constraints</a>
 - [Functions](#functions)
-  - String Functions
+  - [String Functions](#string-functionshttpsdevmysqlcomdocrefman80enstring-functionshtml)
 
 </br>
 </br>
