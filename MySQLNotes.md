@@ -66,23 +66,24 @@
 										<coulumn_name> <data_type>
 										?Constraints?
 								);
-	Delete tables: DROP TABLE tablename,tablename,..;
-	List Tables: SHOW TABLES;
+	Delete tables: 				DROP TABLE tablename,tablename,..;
+	List Tables: 				SHOW TABLES;
+	Show Columns 				SHOW COLUMNS FROM <tablename;
+								DESC <tablename;
 ```
 
-### ALTER:
+### ALTER Table:
 
 ```sql
-Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
-Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
-Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
-Drop Columns: ALTER TABLE <tablename DROP <coulumn_name>;
-Drop Constraint: ALTER TABLE <tablename DROP ?Constraint?
-Modify Col: ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
-Modify Col: ALTER TABLE <tablename ALTER <coulumn_name> dataType;
+Rename Table: 			ALTER TABLE <tablename> RENAME TO <new_table_name>;
+Add Columns: 			ALTER TABLE <tablename ADD <coulumn_name dataType;
+Add Constraint: 		ALTER TABLE <tablename ADD ?Constraint?
+Drop Columns: 			ALTER TABLE <tablename DROP <coulumn_name>;
+Drop Constraint: 		ALTER TABLE <tablename DROP ?Constraint?
+Modify Col: 			ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
+Modify Col: 			ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 
-Show Columns SHOW COLUMNS FROM <tablename;
-DESC <tablename;
+
 
 Insert: INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
 INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
