@@ -2,8 +2,9 @@
 
 ## Sections
 
-[Database and Tables](#database-and-tables) - Data
-[Functions](#functions)
+-[Database and Tables](#database-and-tables)
+
+- Data -[Functions](#functions)
 
 </br>
 </br>
