@@ -30,7 +30,7 @@
     							DATETIME						Format YYYY-MM-DD HH:MM:SS
     							TIMESTAMP						Same as DATETIME but smaller
 
-### Constraints:
+### Constraints
 
     Null:
     	Setting Null:			Mean not defined do nothing
