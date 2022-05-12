@@ -181,12 +181,12 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
 ### Flow Control Functions:
 
 ```sql
-  1.  If: 						If(equation,trueAns,falseAns)
-      IfNull: 					IFNULL(checkIfNull, answerIfNull)
-      CASE: 					CASE
-									WHEN Logical THEN 'answer'
-									ELSE 'falseAnswer'
-								END ?AS?
+	If_Statments: 						If(equation,trueAns,falseAns)
+    IfNull: 							IFNULL(checkIfNull, answerIfNull)
+	Cases: 								CASE
+											WHEN Logical THEN 'answer'
+											ELSE 'falseAnswer'
+										END ?AS?
 ```
 
 - Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
