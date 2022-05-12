@@ -52,7 +52,7 @@
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
-### [MySQL Commandline](MySQL Commandline)
+### MySQL Commandline
 
 ```sql
     Run query files:			source filename.sql; - If in same directory
