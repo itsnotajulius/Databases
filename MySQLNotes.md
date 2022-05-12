@@ -208,6 +208,9 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 
 ### Relationships/Joins:
 
+All below is to do with relationships between tables and ways of Selecting data where they have relationships.
+Setting up relationships is set when creating a table or altering the column.
+
 ```sql
     One_to_One
 	One_to_Many
@@ -233,7 +236,3 @@ Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTim
 | MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 | Columns               |     |                                                                      Headers / Col_Name / Variable |
 | Rows                  |     |                                                                                               Data |
-
-```
-
-```
