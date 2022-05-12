@@ -49,9 +49,9 @@
     Currect DB:					SELECT database();
     Exit DB:					exit
 
-## Table:
+# Table:
 
-Crete Tables: CREATE TABLE <tablenames
+Crete Tables: CREATE TABLE tablenames
 (
 <coulumn_name> <data_type> ?NULL? ?DEFAULT? ?UPDATE? ?AUTO_INCREMENT?,
 <coulumn_name> <data_type>
