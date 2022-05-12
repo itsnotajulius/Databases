@@ -3,10 +3,13 @@
 ## Sections
 
 - [Database and Tables](#database-and-tables)
+
   - <a href = "#datatype">DataTYPE</a>
-  - <a href = "#constraints">DataTYPE</a>
-  - [Constraints](#constraintshttpswwww3schoolscomsqlsqlconstraintsasp)
+  - <a href = "#constraints">Constraints</a>
+  - <a href = "#mysql-commandline">Constraints</a>
+
   - [Mysql](#mysql-commandlinemysql-commandline)
+
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
 
