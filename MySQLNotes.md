@@ -4,7 +4,8 @@
 
 - [Database and Tables](#database-and-tables)
 
-- Data - [Functions](#functions)
+- Data
+- [Functions](#functions)
 
 </br>
 </br>
