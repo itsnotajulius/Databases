@@ -44,7 +44,7 @@
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
-## MySQL:
+### MySQL:
 
     Run query:					source filename.sql; - If in same directory
     							source path/<filename>.sql
@@ -55,7 +55,7 @@
     Currect DB:					SELECT database();
     Exit DB:					exit
 
-# Table:
+### Table:
 
 ```
 	Crete Tables: 				CREATE TABLE tablenames
@@ -68,8 +68,9 @@
 	List Tables: SHOW TABLES;
 ```
 
-# ALTER:
+### ALTER:
 
+```
 Rename Table: ALTER TABLE <tablename> RENAME TO <new_table_name>;
 Add Columns: ALTER TABLE <tablename ADD <coulumn_name dataType;
 Add Constraint: ALTER TABLE <tablename ADD ?Constraint?
@@ -97,12 +98,14 @@ Update: UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,.
 Delete: DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
 Delete all: DELETE FROM cats;
 Warnings: SHOW WARNINGS;
+```
 
 ---
 
 ### String Functions:
 
-1.  NOTE: Cause they are functions they can be used by each other.
+```
+NOTE: Cause they are functions they can be used by each other.
 
 CONCAT: CONCAT(<coulumn_name, StrFUNC , text, number,....)
 CONCAT_WS: CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
@@ -112,27 +115,33 @@ SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Negative means start from the ba
 REPLACE: REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
 REVERSE: REVERSE(<coulumn_name>/StrFUNC/Text)
 CHAR_LENGTH: CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+```
 
 ### Refining Select:
 
+```
 WHERE: WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
 DISTINCT: SELECT DISTINCT <coulumn_name>/StrFUNC
 ORDER: ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
 LIMIT: LIMIT #;
 LIKE: WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+```
 
 - Aggregate Functions:
 
+```
   1COUNT: COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
   GROUP BY: GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
   MIN: MIN(<coulumn_name>)
   MAX: MAX(<coulumn_name>)
   SUM: SUM(<coulumn_name>)
   AVG: AVG(<coulumn_name>)
+```
 
 - Date Time Functions:
 
+```
   Current Date: CURDATE()
   Current time: CURTIME()
   Now: NOW()
@@ -150,9 +159,11 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       Date Add: DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
+```
 
 - Logical Operators:
 
+```
   1.  Equal =
       Not Equal !=
       Greater Than: > >=
@@ -165,25 +176,32 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       IN: IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
       IN: NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
       BETWEEN: BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
+```
 
 - Flow Control Functions:
 
+```
   1.  If: If(equation,trueAns,falseAns)
       IfNull IFNULL(checkIfNull, answerIfNull)
       CASE: CASE
       WHEN Logical THEN 'answer'
       ELSE 'falseAnswer'
       END ?AS?
+```
 
 - Numeric Functions And Operators: https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html Plus: #+#
 
+```
   1.  Minus: #-#
       Multiply: #\*#
       Divide: #/# (Calculed with BIGINT)
       DIV(3,Div#) (Converted to DECIMAL to Cal and Convert to BIGINT)
       Remainder: MOD(#,Div#)
+```
 
 - Relationships/Joins:
+
+```
   1.  One to One
       One to Many
       Many to Many
@@ -193,12 +211,13 @@ Not LIKE: WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endTex
       Left Join: FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
       Right Join: FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
       Cascade: ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+```
 
 # THOERY
 
 ## Definiations:
 
-    CRUD:					Create Read Update Delete
+    CRUD: Create Read Update Delete
     SQL - Language to talk to database
     MySQL - uses SQL just has different features to other DBMS
 
