@@ -7,7 +7,7 @@
   - <a href="#Constraints">Constraints</a>
   - [Mysql](#mysql-commandlinemysql-commandline)
 - [Functions](#functions)
-  - <a href = >String Functions](#string-functions)
+  - [String Functions](#string-functions)
 
 </br>
 </br>
