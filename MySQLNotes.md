@@ -166,10 +166,10 @@ Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/
       Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 ```
 
-### Logical Operators:
+### Operators:
 
 ```sql
-  1.  Equal =
+  1.  Equal 							=
       Not Equal !=
       Greater Than: > >=
       Less Than: <
