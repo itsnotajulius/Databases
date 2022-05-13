@@ -137,12 +137,12 @@ Row_Data_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ### Refining Select:
 
 ```sql
-WHERE: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
-DISTINCT: 								SELECT DISTINCT <coulumn_name>/StrFUNC
-ORDER: 									ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
-LIMIT: 									LIMIT #;
-LIKE: 									WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-Not LIKE: 								WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+WHERE__: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
+DISTINCT_: 									SELECT DISTINCT <coulumn_name>/StrFUNC
+ORDER_: 									ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
+LIMIT_: 									LIMIT #;
+LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 ```
 
 ### [Aggregate Functions:](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions-and-modifiers.html)
