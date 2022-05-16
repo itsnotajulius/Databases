@@ -241,6 +241,8 @@ EG: PERSON has one ID and one ID belongs to one PERSON
 
 > One_to_Many
 
+EG: CUSTOMER can have many ORDERS but ORDER belongs to one CUSTOMER
+
 > Many_to_Many
 
 EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
