@@ -29,7 +29,7 @@ Number_:       					INT
 String:							VARCHAR(#)
 								CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
 Date_and_Time:					DATE							Format YYYY-MM-DD
-								YEAR()
+								YEAR(4 or 2)
 								TIME							Format HH:MM:SS
 								DATETIME						Format YYYY-MM-DD HH:MM:SS
 								TIMESTAMP						Same as DATETIME but smaller
