@@ -21,17 +21,17 @@
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
 ```sql
-Number_:       				INT
-							int(#)
-							DECIMAL(digits#,deci#)
-							FLOAT                  			7 digits issues
-							DOUBLE                 			Bigger float, issues bigger than 15 digits
-String:						VARCHAR(#)
-							CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
-Date_and_Time:				DATE							Format YYYY-MM-DD
-							TIME							Format HH:MM:SS
-							DATETIME						Format YYYY-MM-DD HH:MM:SS
-							TIMESTAMP						Same as DATETIME but smaller
+_Number_:       				INT
+								int(#)
+								DECIMAL(digits#,deci#)
+								FLOAT                  			7 digits issues
+								DOUBLE                 			Bigger float, issues bigger than 15 digits
+String:							VARCHAR(#)
+								CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
+Date_and_Time:					DATE							Format YYYY-MM-DD
+								TIME							Format HH:MM:SS
+								DATETIME						Format YYYY-MM-DD HH:MM:SS
+		_						TIMESTAMP						Same as DATETIME but smaller
 ```
 
 ### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
@@ -124,21 +124,21 @@ Warnings: 						SHOW WARNINGS;
 ```sql
 NOTE: Cause they are functions they can be used by each other.
 
-CONCAT_: 							CONCAT(<coulumn_name, StrFUNC , text, number,....)
-CONCAT_WS: 							CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
-SUBSTRING_: 							SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
-									SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
-									SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
-REPLACE_: 							REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
-REVERSE_: 							REVERSE(<coulumn_name>/StrFUNC/Text)
-Row_Data_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+CONCAT_: 									CONCAT(<coulumn_name, StrFUNC , text, number,....)
+CONCAT_WS: 									CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
+SUBSTRING_: 								SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
+											SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
+											SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
+REPLACE_: 									REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
+REVERSE_: 									REVERSE(<coulumn_name>/StrFUNC/Text)
+Row_Data_LENGTH: 							CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ```
 
 ### Refining Select:
 
 ```sql
 WHERE__: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
-DISTINCT_: 		****							SELECT DISTINCT <coulumn_name>/StrFUNC
+DISTINCT_: 									SELECT DISTINCT <coulumn_name>/StrFUNC
 ORDER_: 									ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
 LIMIT_: 									LIMIT #;
 LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
@@ -159,63 +159,63 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
 
 ```sql
-	Current_Date:						CURDATE()
-	CurrentTime: 						CURTIME()
-	Now_: 								NOW()
-	MINUTE: 							MINUTE(<coulumn_name>/'dateTimeFormat')
-	HOUR: 								HOUR(<coulumn_name>/'dateTimeFormat')
-	DAY_: 								DAY(<coulumn_name>/'dateTimeFormat')
-	DAY_NAME: 							DAYNAME(<coulumn_name>/'dateTimeFormat')
-	DAY_OF_WEEK: 						DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
-	DAY_OF_YEAR 						DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
-	MONTH_: 							MONTH(<coulumn_name>/'dateTimeFormat')
-	MONTH_NAME: 						MONTHNAME(<coulumn_name>/'dateTimeFormat')
-	DATEFORMAT_: 						DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
-	Date_Difference: 					DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
-	Date_Add: 							DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
-	Date_Sub: 							DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
-										Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
+	Current_Date:							CURDATE()
+	CurrentTime: 							CURTIME()
+	Now_: 									NOW()
+	MINUTE: 								MINUTE(<coulumn_name>/'dateTimeFormat')
+	HOUR: 									HOUR(<coulumn_name>/'dateTimeFormat')
+	DAY_: 									DAY(<coulumn_name>/'dateTimeFormat')
+	DAY_NAME: 								DAYNAME(<coulumn_name>/'dateTimeFormat')
+	DAY_OF_WEEK: 							DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
+	DAY_OF_YEAR 							DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
+	MONTH_: 								MONTH(<coulumn_name>/'dateTimeFormat')
+	MONTH_NAME: 							MONTHNAME(<coulumn_name>/'dateTimeFormat')
+	DATEFORMAT_: 							DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
+	Date_Difference: 						DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
+	Date_Add: 								DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+	Date_Sub: 								DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+											Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 
 ```
 
 ### Operators:
 
 ```sql
-  1.  Equal 							=
-      Not_Equal 						!=
-      Greater Than: 					>
-	  									>=
+  1.  Equal 								=
+      Not_Equal 							!=
+      Greater Than: 						>
+	  										>=
       Less Than: <
       <=
-      LIKE_: 							WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-      Not_LIKE: 						WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-      AND_: 							?LogOp? AND ?LogOp? ....
-      OR_: 								?LogOp? OR ?LogOp? ....
-      IN_: 								IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
-      IN_: 								NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
-      BETWEEN_: 						BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
+      LIKE_: 								WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+      Not_LIKE: 							WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+      AND_: 								?LogOp? AND ?LogOp? ....
+      OR_: 									?LogOp? OR ?LogOp? ....
+      IN_: 									IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
+      IN_: 									NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
+      BETWEEN_: 							BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 ```
 
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
 ```sql
-	If_Statments: 						If(equation,trueAns,falseAns)
-    IfNul_l: 							IFNULL(checkIfNull, answerIfNull)
-	Cases: 								CASE
-											WHEN Logical THEN 'answer'
-											ELSE 'falseAnswer'
-										END ?AS?
+	If_Statments: 							If(equation,trueAns,falseAns)
+    IfNul_l: 								IFNULL(checkIfNull, answerIfNull)
+	Cases: 									CASE
+												WHEN Logical THEN 'answer'
+												ELSE 'falseAnswer'
+											END ?AS?
 ```
 
 ### [Numeric Functions And Operators:](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
 ```sql
- 	Plus: 							#+#
-    Minus: 							#-#
-	Multiply: 						#\*#
-	Divide: 							#/# (Calculed with BIGINT)
-									DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
-	Remainder: 						MOD(#,Div#)
+ 	Plus: 									#+#
+    Minus: 									#-#
+	Multiply: 								#\*#
+	Divide: 								#/# (Calculed with BIGINT)
+											DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
+	Remainder: 								MOD(#,Div#)
 ```
 
 ### Relationships/Joins:
@@ -232,12 +232,12 @@ Setting up relationships is set when creating a table or altering the column. Th
    One_to_One
 	One_to_Many
 	Many_to_Many
-	Cross_Joins: 					FROM <tablename,<tablename; (Just joins everything)
-	Implicit_Join: 					FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
-	Explicit_Join: 					FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Left_Join: 						FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Right_Join: 					FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Cascade: 						ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+	Cross_Joins: 							FROM <tablename,<tablename; (Just joins everything)
+	Implicit_Join: 							FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
+	Explicit_Join: 							FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Left_Join: 								FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Right_Join: 							FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+	Cascade: 								ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
 # THOERY
