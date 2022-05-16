@@ -224,15 +224,15 @@ All below is to do with relationships between tables and ways of Selecting data 
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
 ```sql
-   One_to_One
-	One_to_Many
-	Many_to_Many
-	Cross_Joins: 							FROM <tablename,<tablename; (Just joins everything)
-	Implicit_Join: 							FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
-	Explicit_Join: 							FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Left_Join: 								FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Right_Join: 							FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-	Cascade: 								ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
+One_to_One
+One_to_Many
+Many_to_Many
+Cross_Joins: 							FROM <tablename,<tablename; (Just joins everything)
+Implicit_Join: 							FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
+Explicit_Join: 							FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+Left_Join: 								FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+Right_Join: 							FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+Cascade: 								ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
 # THOERY
