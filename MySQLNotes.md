@@ -124,6 +124,7 @@ Warnings: 						SHOW WARNINGS;
 ```sql
 NOTE: Cause they are functions they can be used by each other.
 
+LowCase:
 CONCAT_: 									CONCAT(<coulumn_name, StrFUNC , text, number,....)
 CONCAT_WS: 									CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
 SUBSTRING_: 								SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
