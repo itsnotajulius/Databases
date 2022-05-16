@@ -134,8 +134,10 @@ SUBSTRING_: 								SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
 											SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
 REPLACE_: 									REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
 REVERSE_: 									REVERSE(<coulumn_name>/StrFUNC/Text)
-Length: 									CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+Length_: 									CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 											LENGTH(<coulumn_name>/StrFUNC/Text)
+LOCATE_:									LOCATE('searchText', 'Text');
+											LOCATE('searchText', 'Text', start#);
 ```
 
 ### Refining Select:
