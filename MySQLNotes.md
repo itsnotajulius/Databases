@@ -128,12 +128,13 @@ LowCase:									LOWER(<coulumn_name>/StrFUNC/Text)
 UpperCase:									UPPER(<coulumn_name>/StrFUNC/Text)
 CONCAT_: 									CONCAT(<coulumn_name, StrFUNC , text, number,....)
 CONCAT_WS: 									CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
+Left_Minus:									LEFT(text,#);
 SUBSTRING_: 								SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
 											SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
 											SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
 REPLACE_: 									REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
 REVERSE_: 									REVERSE(<coulumn_name>/StrFUNC/Text)
-Row_Data_LENGTH: 							CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
+Data_Size: 									CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ```
 
 ### Refining Select:
