@@ -138,7 +138,7 @@ Row_Data_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 
 ```sql
 WHERE__: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
-DISTINCT_: 									SELECT DISTINCT <coulumn_name>/StrFUNC
+DISTINCT_: 		****							SELECT DISTINCT <coulumn_name>/StrFUNC
 ORDER_: 									ORDER BY <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?, <coulumn_name>/StrFUNC/selectParameterNumber ?DESC?
 LIMIT_: 									LIMIT #;
 LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
