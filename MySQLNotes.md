@@ -87,31 +87,31 @@
 ### ALTER Table:
 
 ```sql
-Rename Table: 					ALTER TABLE <tablename> RENAME TO <new_table_name>;
-Add Columns: 					ALTER TABLE <tablename ADD <coulumn_name dataType;
-Add Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
-Drop Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
-Drop Constraint: 				ALTER TABLE <tablename DROP ?Constraint?
-Modify Col: 					ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
-Modify Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
+Rename_Table: 					ALTER TABLE <tablename> RENAME TO <new_table_name>;
+Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name dataType;
+Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
+Drop_Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
+Drop_Constraint: 				ALTER TABLE <tablename DROP ?Constraint?
+Modify_Col: 					ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
+Modify_Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 
 
 
-Insert: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
+Insert_: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
 								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
-Multiple Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
+Multiple_Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
-Show Table: 					SELECT \* FROM <tablename ?WHERE?;
+Show_Table: 					SELECT \* FROM <tablename ?WHERE?;
 Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
 								SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
 								SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
 								SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?AggFunc? ?RefineSel?;
 								SELECT <coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
 
-Update: 						UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
+Update_: 						UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
 
-Delete: 						DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
-Delete all: 					DELETE FROM cats;
+Delete_: 						DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
+Delete_all: 					DELETE FROM cats;
 Warnings: 						SHOW WARNINGS;
 ```
 
@@ -124,13 +124,13 @@ Warnings: 						SHOW WARNINGS;
 ```sql
 NOTE: Cause they are functions they can be used by each other.
 
-CONCAT: 							CONCAT(<coulumn_name, StrFUNC , text, number,....)
+CONCAT_: 							CONCAT(<coulumn_name, StrFUNC , text, number,....)
 CONCAT_WS: 							CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
-SUBSTRING: 							SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
+SUBSTRING_: 							SUBSTRING(<coulumn_name>/StrFUNC/Text, start#, end#)
 									SUBSTRING(<coulumn_name>/StrFUNC/Text, start#)
 									SUBSTRING(<coulumn_name>/StrFUNC/Text, -start#) Begins back
-REPLACE: 							REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
-REVERSE: 							REVERSE(<coulumn_name>/StrFUNC/Text)
+REPLACE_: 							REPLACE(<coulumn_name>/StrFUNC/Text, searchValue, replaceValue)
+REVERSE_: 							REVERSE(<coulumn_name>/StrFUNC/Text)
 Row_Data_LENGTH: 					CHAR_LENGTH(<coulumn_name>/StrFUNC/Text)
 ```
 
@@ -148,12 +148,12 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### [Aggregate Functions:](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions-and-modifiers.html)
 
 ```sql
-  COUNT: 								COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
-  GROUP_BY: 							GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
-  MIN: 									MIN(<coulumn_name>)
-  MAX: 									MAX(<coulumn_name>)
-  SUM: 									SUM(<coulumn_name>)
-  AVG: 									AVG(<coulumn_name>)
+  COUNT_: 									COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
+  GROUP_BY: 								GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
+  MIN_: 									MIN(<coulumn_name>)
+  MAX_: 									MAX(<coulumn_name>)
+  SUM_: 									SUM(<coulumn_name>)
+  AVG_: 									AVG(<coulumn_name>)
 ```
 
 ### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
@@ -200,7 +200,7 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 
 ```sql
 	If_Statments: 						If(equation,trueAns,falseAns)
-    IfNull: 							IFNULL(checkIfNull, answerIfNull)
+    IfNul_l: 							IFNULL(checkIfNull, answerIfNull)
 	Cases: 								CASE
 											WHEN Logical THEN 'answer'
 											ELSE 'falseAnswer'
