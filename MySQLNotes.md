@@ -237,11 +237,13 @@ Setting up relationships is set when creating a table or altering the column. Th
 
 > One_to_One
 
-EG: PERSON has One ID and One ID belongs to One Prson
+EG: PERSON has one ID and one ID belongs to one PERSON
 
 > One_to_Many
 
 > Many_to_Many
+
+EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
 
 ```sql
 Cross_Joins: 								FROM <tablename,<tablename; (Just joins everything)
