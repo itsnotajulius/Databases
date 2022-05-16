@@ -226,6 +226,7 @@ Setting up relationships is set when creating a table or altering the column. Th
 | One to One                                                             | One to Many | Many to Many |
 | ---------------------------------------------------------------------- | ----------- | ------------ |
 | Wach record of one table is related to only one record of other table. | B1          | C1           |
+| Wach record of one table is related to only one record of other table. | B1          | C1           |
 
 ```sql
    One_to_One
