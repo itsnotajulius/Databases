@@ -159,22 +159,22 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
 
 ```sql
-	Current Date: CURDATE()
-	Current time: CURTIME()
-	Now: NOW()
-	MINUTE: MINUTE(<coulumn_name>/'dateTimeFormat')
-	HOUR: HOUR(<coulumn_name>/'dateTimeFormat')
-	DAY: DAY(<coulumn_name>/'dateTimeFormat')
-	DAY NAME: DAYNAME(<coulumn_name>/'dateTimeFormat')
-	DAY OF WEEK: DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
-	DAY OF YEAR DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
-	MONTH: MONTH(<coulumn_name>/'dateTimeFormat')
-	MONTH NAME: MONTHNAME(<coulumn_name>/'dateTimeFormat')
-	DATE FORMAT: DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
-	Date Difference: DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
-	Date Add: DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
-	Date Sub: DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
-	Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
+	Current_Date:						CURDATE()
+	CurrentTime: 						CURTIME()
+	Now_: 								NOW()
+	MINUTE: 							MINUTE(<coulumn_name>/'dateTimeFormat')
+	HOUR: 								HOUR(<coulumn_name>/'dateTimeFormat')
+	DAY_: 								DAY(<coulumn_name>/'dateTimeFormat')
+	DAY_NAME: 							DAYNAME(<coulumn_name>/'dateTimeFormat')
+	DAY_OF_WEEK: 						DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
+	DAY_OF_YEAR 						DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
+	MONTH_: 							MONTH(<coulumn_name>/'dateTimeFormat')
+	MONTH_NAME: 						MONTHNAME(<coulumn_name>/'dateTimeFormat')
+	DATEFORMAT_: 						DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
+	Date_Difference: 					DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
+	Date_Add: 							DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+	Date_Sub: 							DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+										Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 
 ```
 
