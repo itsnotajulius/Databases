@@ -31,7 +31,10 @@ String:							VARCHAR(#)
 Date_and_Time:					DATE							Format YYYY-MM-DD
 								TIME							Format HH:MM:SS
 								DATETIME						Format YYYY-MM-DD HH:MM:SS
-		_						TIMESTAMP						Same as DATETIME but smaller
+								TIMESTAMP						Same as DATETIME but smaller
+Logical:						BOOL
+								BOOLEAN
+
 ```
 
 ### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
