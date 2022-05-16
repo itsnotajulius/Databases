@@ -20,15 +20,13 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
-|         |     |     |
-| ------- | --- | --- |
-| Number: | B1  | INT |
-| A2      | B2  | C2  |
-| A3      | B3  | C3  |
+|         |     |                        |
+| ------- | --- | ---------------------- |
+| Number: |     | INT                    |
+| A2      |     | int(#)                 |
+| A3      |     | DECIMAL(digits#,deci#) |
 
-    							INT
-                      			int(#)
-                      			DECIMAL(digits#,deci#)			()
+                      						()
                       			FLOAT							7 digits issues
                       			DOUBLE							Bigger float issues bigger than 15 digits
     String:						VARCHAR(#)
