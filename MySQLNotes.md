@@ -140,6 +140,8 @@ LOCATE_:									LOCATE('searchText', 'Text');
 											LOCATE('searchText', 'Text', start#);
 ```
 
+> LOWER() and UPPER() cant convert
+
 ### Refining Select:
 
 ```sql
