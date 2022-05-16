@@ -235,10 +235,13 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
+> One_to_One EG: PERSON has One ID and One ID belongs to One Prson
+
+> One_to_Many
+
+> Many_to_Many
+
 ```sql
-One_to_One
-One_to_Many
-Many_to_Many
 Cross_Joins: 								FROM <tablename,<tablename; (Just joins everything)
 Implicit_Join:	 							FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
 Explicit_Join:	 							FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
