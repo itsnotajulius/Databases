@@ -72,7 +72,7 @@
 ### Table:
 
 ```sql
-	Crete Tables: 				CREATE TABLE tablenames
+	Create Tables: 				CREATE TABLE tablenames
 								(
 										<coulumn_name> <data_type> ?Constraints? ?Constraints?,
 										<coulumn_name> <data_type>
