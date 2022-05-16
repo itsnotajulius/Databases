@@ -159,32 +159,32 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### [Aggregate Functions:](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions-and-modifiers.html)
 
 ```sql
-  COUNT_: 									COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
-  GROUP_BY: 								GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
-  MIN_: 									MIN(<coulumn_name>)
-  MAX_: 									MAX(<coulumn_name>)
-  SUM_: 									SUM(<coulumn_name>)
-  AVG_: 									AVG(<coulumn_name>)
+COUNT_: 									COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
+GROUP_BY: 									GROUP BY <coulumn_name>, <coulumn_name> Makes groups unseen
+MIN_: 										MIN(<coulumn_name>)
+MAX_: 										MAX(<coulumn_name>)
+SUM_: 										SUM(<coulumn_name>)
+AVG_: 										AVG(<coulumn_name>)
 ```
 
 ### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
 
 ```sql
-	Current_Date:							CURDATE()
-	CurrentTime: 							CURTIME()
-	Now_: 									NOW()
-	MINUTE: 								MINUTE(<coulumn_name>/'dateTimeFormat')
-	HOUR: 									HOUR(<coulumn_name>/'dateTimeFormat')
-	DAY_: 									DAY(<coulumn_name>/'dateTimeFormat')
-	DAY_NAME: 								DAYNAME(<coulumn_name>/'dateTimeFormat')
-	DAY_OF_WEEK: 							DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
-	DAY_OF_YEAR 							DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
-	MONTH_: 								MONTH(<coulumn_name>/'dateTimeFormat')
-	MONTH_NAME: 							MONTHNAME(<coulumn_name>/'dateTimeFormat')
-	DATEFORMAT_: 							DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
-	Date_Difference: 						DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
-	Date_Add: 								DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
-	Date_Sub: 								DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+Current_Date:								CURDATE()
+CurrentTime: 								CURTIME()
+Now_: 										NOW()
+MINUTE: 									MINUTE(<coulumn_name>/'dateTimeFormat')
+HOUR: 										HOUR(<coulumn_name>/'dateTimeFormat')
+DAY_: 										DAY(<coulumn_name>/'dateTimeFormat')
+DAY_NAME: 									DAYNAME(<coulumn_name>/'dateTimeFormat')
+DAY_OF_WEEK: 								DAYOFWEEK(<coulumn_name>/'dateTimeFormat')
+DAY_OF_YEAR 								DAYOFYEAR(<coulumn_name>/'dateTimeFormat')
+MONTH_: 									MONTH(<coulumn_name>/'dateTimeFormat')
+MONTH_NAME: 								MONTHNAME(<coulumn_name>/'dateTimeFormat')
+DATEFORMAT_: 								DATE_FORMAT(<coulumn_name>/'dateTimeFormat', 'TEXT$Format$Format....') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-format)
+Date_Difference: 							DATEDIFF(<coulumn_name>/'dateTimeFormat', dateTimeFunc/'dateTimeFormat') [Website](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add)
+Date_Add: 									DATE_ADD(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
+Date_Sub: 									DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERVAL #/'dateTimeFormat' unit) https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_date-add
 											Use +- <coulumn_name>/'dateTimeFormat'/dateTimeFunc +- INTERVAL #/'dateTimeFormat' unit +/....
 
 ```
@@ -192,19 +192,19 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### Operators:
 
 ```sql
-  1.  Equal 								=
-      Not_Equal 							!=
-      Greater Than: 						>
-	  										>=
-      Less Than: <
-      <=
-      LIKE_: 								WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-      Not_LIKE: 							WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-      AND_: 								?LogOp? AND ?LogOp? ....
-      OR_: 									?LogOp? OR ?LogOp? ....
-      IN_: 									IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
-      IN_: 									NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
-      BETWEEN_: 							BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
+Equal 										=
+Not_Equal 									!=
+Greater Than: 								>
+											>=
+Less Than: <
+<=
+LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+AND_: 										?LogOp? AND ?LogOp? ....
+OR_: 										?LogOp? OR ?LogOp? ....
+IN_: 										IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
+IN_: 										NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
+BETWEEN_: 									BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 ```
 
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
