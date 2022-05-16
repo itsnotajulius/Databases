@@ -21,7 +21,7 @@
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
 ```sql
-_Number_:       				INT
+Number_:       					INT
 								int(#)
 								DECIMAL(digits#,deci#)
 								FLOAT                  			7 digits issues
@@ -29,6 +29,7 @@ _Number_:       				INT
 String:							VARCHAR(#)
 								CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
 Date_and_Time:					DATE							Format YYYY-MM-DD
+								YEAR()
 								TIME							Format HH:MM:SS
 								DATETIME						Format YYYY-MM-DD HH:MM:SS
 								TIMESTAMP						Same as DATETIME but smaller
