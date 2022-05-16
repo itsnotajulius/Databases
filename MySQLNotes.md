@@ -245,4 +245,4 @@ Setting up relationships is set when creating a table or altering the column.
 | **Database:**         |     |                                                                      Collection of Data (Database) |
 | **MySQL use**         |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 | **Columns**           |     |                                                                      Headers / Col_Name / Variable |
-| Rows                  |     |                                                                                               Data |
+| **Rows**              |     |                                                                                               Data |
