@@ -20,11 +20,11 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
-|         |     |                        |
-| ------- | --- | ---------------------- |
-| Number: |     | INT                    |
-| A2      |     | int(#)                 |
-| A3      |     | DECIMAL(digits#,deci#) |
+| | | | |
+| ------- | --- | ---------------------- | |
+| Number: | | INT | |
+| A2 | | int(#) | |
+| A3 | | DECIMAL(digits#,deci#) | |
 
                       						()
                       			FLOAT							7 digits issues
