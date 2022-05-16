@@ -235,7 +235,9 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
-> One_to_One EG: PERSON has One ID and One ID belongs to One Prson
+> One_to_One
+
+EG: PERSON has One ID and One ID belongs to One Prson
 
 > One_to_Many
 
