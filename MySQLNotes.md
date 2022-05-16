@@ -20,20 +20,17 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
-| Types:  |     |                        |                                            |
-| ------- | --- | ---------------------- | ------------------------------------------ |
-| Number: |     | INT                    |                                            |
-|         |     | int(#)                 |                                            |
-|         |     | DECIMAL(digits#,deci#) |                                            |
-|         |     | FLOAT                  | 7 digits issues                            |
-|         |     | DOUBLE                 | Bigger float, issues bigger than 15 digits |
-
-    String:						VARCHAR(#)
-    							CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
-    Date and Time:				DATE							Format YYYY-MM-DD
-    							TIME							Format HH:MM:SS
-    							DATETIME						Format YYYY-MM-DD HH:MM:SS
-    							TIMESTAMP						Same as DATETIME but smaller
+Number: INT  
+ int(#)  
+ DECIMAL(digits#,deci#)
+FLOAT 7 digits issues  
+ DOUBLE Bigger float, issues bigger than 15 digits
+String: VARCHAR(#)
+CHAR(#) Fix length stored with spaces of set size can be 0 to 255
+Date and Time: DATE Format YYYY-MM-DD
+TIME Format HH:MM:SS
+DATETIME Format YYYY-MM-DD HH:MM:SS
+TIMESTAMP Same as DATETIME but smaller
 
 ### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
 
