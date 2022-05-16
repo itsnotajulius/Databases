@@ -91,8 +91,8 @@ Logical:						BOOL
 ### ALTER Table:
 
 ```sql
-Rename_Table: 					ALTER TABLE <tablename> RENAME TO <new_table_name>;
-Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name dataType;
+Rename_Table: 					ALTER TABLE <tablename> RENAME <coulumn_name> TO <new_table_name>;
+Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name> dataType;
 Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
 Drop_Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
 Drop_Constraint: 				ALTER TABLE <tablename DROP ?Constraint?
