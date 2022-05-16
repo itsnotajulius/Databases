@@ -241,7 +241,7 @@ Setting up relationships is set when creating a table or altering the column.
 | --------------------- | --- | -------------------------------------------------------------------------------------------------: |
 | **CRUD:**             |     |                                                                          Create Read Update Delete |
 | **SQL**               |     |                                                                       Language to talk to database |
-| MySQL                 |     |                                                 Uses SQL just has different features to other DBMS |
+| **MySQL**             |     |                                                 Uses SQL just has different features to other DBMS |
 | Database:             |     |                                                                      Collection of Data (Database) |
 | MySQL use             |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 | Columns               |     |                                                                      Headers / Col_Name / Variable |
