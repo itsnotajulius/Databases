@@ -196,8 +196,8 @@ Equal 										=
 Not_Equal 									!=
 Greater Than: 								>
 											>=
-Less Than: <
-<=
+Less Than: 									<
+											<=
 LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 AND_: 										?LogOp? AND ?LogOp? ....
@@ -205,6 +205,7 @@ OR_: 										?LogOp? OR ?LogOp? ....
 IN_: 										IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
 IN_: 										NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
 BETWEEN_: 									BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
+If_NUll:									<coulumn_name>/AggFunc IS NULL
 ```
 
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
