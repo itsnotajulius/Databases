@@ -32,7 +32,7 @@ Date_and_Time:					DATE							Format YYYY-MM-DD
 								YEAR(4 or 2)
 								TIME							Format HH:MM:SS
 								DATETIME						Format YYYY-MM-DD HH:MM:SS
-								TIMESTAMP						Same as DATETIME but smaller
+								TIMESTAMP						Same DATETIME but smaller
 Logical:						BOOL
 								BOOLEAN
 
