@@ -124,11 +124,8 @@ Warnings: 						SHOW WARNINGS;
 NOTE: Cause they are functions they can be used by each other.
 
 ```sql
-
-
 LowCase:									LOWER(<coulumn_name>/StrFUNC/Text)
 UpperCase:									UPPER(<coulumn_name>/StrFUNC/Text)
-											N
 CONCAT_: 									CONCAT(<coulumn_name, StrFUNC , text, number,....)
 CONCAT_WS: 									CONCAT(seperate,<coulumn_name>, StrFUNC, text, number,....)
 Left_:										LEFT(text,#);
