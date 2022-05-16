@@ -23,6 +23,7 @@
 | Types: | | | |
 | ------- | --- | ---------------------- | |
 | Number: | | INT | |
+
 | A2 | | int(#) | |
 | A3 | | DECIMAL(digits#,deci#) | |
 | | | FLOAT| |
