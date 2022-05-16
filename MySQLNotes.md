@@ -223,11 +223,10 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
-| Definitions  | One to Many                                                            | Examples                                                        |
-| ------------ | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
-| One to One   | Each record of one table is related to only one record of other table. | EG: Person has one passport and Passport belongs to One person. |
-| One to Many  | B1                                                                     | C1                                                              |
-| Many to Many |                                                                        |                                                                 |
+| Definitions | One to Many                                                                                | Examples                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| One to One  | Each record of one table is related to only one record of other table.                     | EG: 'Person' has one 'passport' and 'Passport' belongs to One 'person'.           |
+| One to Many | Each record of one table can be related to one or more than one record of the other table. | EG: ‘Customer’ can have many ‘Accounts’ but each ‘Account’ is for one ‘Customer’. |
 
 ```sql
    One_to_One
