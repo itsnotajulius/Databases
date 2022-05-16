@@ -20,16 +20,16 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
-| Types:  |     |                        |     |
-| ------- | --- | ---------------------- | --- |
-| Number: |     | INT                    |     |
-|         |     | int(#)                 |     |
-|         |     | DECIMAL(digits#,deci#) |     |
-|         |     | FLOAT                  |     |
+| Types:  |     |                        |                                           |
+| ------- | --- | ---------------------- | ----------------------------------------- |
+| Number: |     | INT                    |                                           |
+|         |     | int(#)                 |                                           |
+|         |     | DECIMAL(digits#,deci#) | 7 digits issues                           |
+|         |     | FLOAT                  | Bigger float issues bigger than 15 digits |
 
                       						()
-                      										7 digits issues
-                      			DOUBLE							Bigger float issues bigger than 15 digits
+
+                      			DOUBLE
     String:						VARCHAR(#)
     							CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
     Date and Time:				DATE							Format YYYY-MM-DD
