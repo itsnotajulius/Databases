@@ -25,6 +25,7 @@
 | Number: | | INT | |
 | A2 | | int(#) | |
 | A3 | | DECIMAL(digits#,deci#) | |
+| | | FLOAT| |
 
                       						()
                       										7 digits issues
