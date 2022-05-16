@@ -20,13 +20,13 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
-| Column A | Column B | Column C |
-| -------- | -------- | -------- |
-| A1       | B1       | C1       |
-| A2       | B2       | C2       |
-| A3       | B3       | C3       |
+|         |     |     |
+| ------- | --- | --- |
+| Number: | B1  | C1  |
+| A2      | B2  | C2  |
+| A3      | B3  | C3  |
 
-    Number:						INT
+    							INT
                       			int(#)
                       			DECIMAL(digits#,deci#)			()
                       			FLOAT							7 digits issues
