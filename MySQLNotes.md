@@ -221,7 +221,7 @@ Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'
 ### Relationships/Joins:
 
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
-Setting up relationships is set when creating a table or altering the column.
+Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
 ```sql
     One_to_One
