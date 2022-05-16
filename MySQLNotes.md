@@ -27,8 +27,6 @@
 |         |     | DECIMAL(digits#,deci#) | 7 digits issues                           |
 |         |     | FLOAT                  | Bigger float issues bigger than 15 digits |
 
-                      						()
-
                       			DOUBLE
     String:						VARCHAR(#)
     							CHAR(#)							Fix length stored with spaces of set size can be 0 to 255
