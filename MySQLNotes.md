@@ -140,7 +140,7 @@ LOCATE_:									LOCATE('searchText', 'Text');
 											LOCATE('searchText', 'Text', start#);
 ```
 
-> LOWER() and UPPER() cant convert
+> LOWER() and UPPER() needs to convert binary Strings
 
 ### Refining Select:
 
