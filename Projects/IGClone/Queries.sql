@@ -62,8 +62,3 @@ SELECT  (SELECT Count(*) FROM   photos) /
         AS avg; 
  
 
- SELECT *
- FROM users
- LEFT JOIN photos
-    ON photos.user_id = users.id
- LIMIT 5;
