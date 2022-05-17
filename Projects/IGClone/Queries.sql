@@ -62,7 +62,7 @@ SELECT  (SELECT Count(*) FROM   photos) /
         AS avg; 
  
 
- SELECT AVG(*)
- FROM user
+ SELECT AVG(*) AS avg
+ FROM users
  JOIN photos
     ON photos.user_id = users.id;
