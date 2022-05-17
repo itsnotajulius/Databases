@@ -13,18 +13,19 @@ ORDER BY Total DESC
 LIMIT 2;
 
 -- Find inactive Users with no pictures
-SELECT username 
-FROM users 
-LEFT JOIN photos ON users.id = photos.user_id 
-LEFT JOIN comments ON users.id = comments.user_id
-WHERE photos.id IS NULL AND comments.id IS NULL
-LIMIT 10;
+SELECT username
+FROM users
+LEFT JOIN photos
+    ON users.id = photos.user_id
+WHERE photos.id IS NULL;
 
 -- Find inactive Users with no pictures or comments
 SELECT username 
 FROM users 
-LEFT JOIN photos ON users.id = photos.user_id 
-LEFT JOIN comments ON users.id = comments.user_id
+LEFT JOIN photos 
+    ON users.id = photos.user_id 
+LEFT JOIN comments 
+    ON users.id = comments.user_id
 WHERE photos.id IS NULL AND comments.id IS NULL
 LIMIT 10;
 
