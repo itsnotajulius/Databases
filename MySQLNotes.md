@@ -49,6 +49,7 @@ Logical:						BOOL
 
     Key:
     	Primary Key:			PRIMARY KEY (<coulumn_name>)
+    							PRIMARY KEY (<coulumn_name>,<coulumn_name>)													(Kinda works like Unique)
     	Foreign Key:			FOREIGN KEY (<coulumn_nameThisTable>) REFERENCES table(<coulumn_nameOtherTable>) ?CASCADE?
 
 
