@@ -16,8 +16,14 @@ CREATE TABLE photos (
 );
 
 -- Making a table for comments that relate to photo and user
-CREATE TABLE comments(
-
+CREATE TABLE comments (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    comment_text VARCHAR(255) NOT NULL,
+    photo_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY(photo_id) REFERENCES photos(id),
+    FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 
