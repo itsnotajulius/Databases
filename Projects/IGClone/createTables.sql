@@ -67,6 +67,9 @@ CREATE TABLE photo_tags (
 );
 
 
+-- Finding Users that commented on everything or nothing
+
+
 
 
 
