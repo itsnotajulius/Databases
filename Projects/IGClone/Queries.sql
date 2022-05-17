@@ -33,6 +33,9 @@ LIMIT 10;
 -- Most popular photo and who created it
 SELECT  *
 FROM likes
-JOIN 
+JOIN photos
+    on likes.photo_id = photo.id
+LIMIT 2;
+
 
  
