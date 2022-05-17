@@ -7,7 +7,12 @@ CREATE TABLE users (
 );
 
 
-
+CREATE TABLE photos(
+    id INTEGER AUTO_INCREMENT PRIMARY
+    image_url
+    username
+    FORIEGN KEY (username) REFENENCES 
+);
 
 
 
