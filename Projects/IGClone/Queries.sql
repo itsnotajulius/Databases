@@ -71,5 +71,5 @@ GROUP BY tags.id
 ORDER BY total DESC 
 LIMIT 5; 
 
---  Find users
+--  Find users that liked everything(BOTS)
 
