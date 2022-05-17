@@ -34,7 +34,7 @@ LIMIT 10;
 SELECT  *
 FROM likes
 JOIN photos
-    on likes.photo_id = photo.id
+    on likes.photo_id = photos.id
 LIMIT 2;
 
 
