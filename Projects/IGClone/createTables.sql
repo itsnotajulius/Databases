@@ -6,7 +6,7 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-
+-- Making photos table
 CREATE TABLE photos (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     image_url VARCHAR(255) NOT NULL,
@@ -14,6 +14,13 @@ CREATE TABLE photos (
     created_at TIMESTAMP DEFAULT NOW(),
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
+
+-- Making a table for comments that relate to photo and user
+CREATE TABLE comments(
+
+);
+
+
 
 
 
