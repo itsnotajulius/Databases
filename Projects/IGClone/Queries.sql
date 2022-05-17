@@ -30,7 +30,7 @@ WHERE photos.id IS NULL AND comments.id IS NULL
 LIMIT 10;
 
 
--- Most popular photo and who created it
+-- Most popular photo
 SELECT  photos.image_url, COUNT(likes.photo_id) AS MOSTest
 FROM likes
 JOIN photos
@@ -38,6 +38,8 @@ JOIN photos
 GROUP BY likes.photo_id
 ORDER BY MOSTest DESC
 LIMIT 1;
+
+-- Most liked photo and user who created it
 
 
  
