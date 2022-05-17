@@ -106,12 +106,12 @@ Insert_: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,
 								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
 Multiple_Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
-Show_Table: 					SELECT * FROM <tablename ?WHERE?;
+Show_Table: 					SELECT * FROM <tablename> ?WHERE?;
 Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
 								SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
 								SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
 								SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?AggFunc? ?RefineSel?;
-								SELECT <coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
+								SELECT <tablename>.<coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
 
 Update_: 						UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
 
