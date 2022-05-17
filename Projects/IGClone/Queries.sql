@@ -37,7 +37,7 @@ JOIN photos
     on likes.photo_id = photos.id
 GROUP BY likes.photo_id
 ORDER BY MOSTest DESC
-LIMIT 2;
+LIMIT 1;
 
 
  
