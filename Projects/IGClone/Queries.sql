@@ -15,7 +15,7 @@ LIMIT 2;
 -- Find inactive Users
 SELECT username 
 FROM users 
-JOIN photos ON users.id = photos.user_id 
+LEFT JOIN photos ON users.id = photos.user_id 
 WHERE photos.id IS NULL
 LIMIT 10;
 
