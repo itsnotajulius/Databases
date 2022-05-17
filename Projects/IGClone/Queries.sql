@@ -11,3 +11,5 @@ FROM users
 GROUP BY DAYOFWEEK
 ORDER BY Total DESC
 LIMIT 2;
+
+-- Find inactive Users
