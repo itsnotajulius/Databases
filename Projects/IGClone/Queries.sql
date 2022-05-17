@@ -13,3 +13,8 @@ ORDER BY Total DESC
 LIMIT 2;
 
 -- Find inactive Users
+SELECT username 
+FROM users 
+JOIN photos ON users.id = photos.user_id 
+JOIN comments ON users.id = comments.user_id 
+LIMIT 10;
