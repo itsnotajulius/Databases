@@ -272,7 +272,11 @@ Right_Join: 								FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = t
 Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
+</br></br></br>
+
 # THOERY
+
+</br>
 
 | <h2>Definitions:</h2> |     |                                                                                                    |
 | --------------------- | --- | -------------------------------------------------------------------------------------------------: |
