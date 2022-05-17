@@ -49,7 +49,22 @@ CREATE TABLE follows (
 );
 
 
+-- Making a tags table that will store hastags in a seperate table but will be join in photo_tags
+CREATE TABLE tags (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  tag_name VARCHAR(255) UNIQUE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
 
+
+-- Making a tags table that stores where hashtags are on certain pictures. 
+CREATE TABLE photo_tags (
+    photo_id INTEGER NOT NULL,
+    tag_id INTEGER NOT NULL,
+    FOREIGN KEY(photo_id) REFERENCES photos(id),
+    FOREIGN KEY(tag_id) REFERENCES tags(id),
+    PRIMARY KEY(photo_id, tag_id)
+);
 
 
 
