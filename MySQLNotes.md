@@ -169,6 +169,8 @@ SUM_: 										SUM(<coulumn_name>)
 AVG_: 										AVG(<coulumn_name>)
 ```
 
+</br></br></br>
+
 ### [Date Time Functions:](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html)
 
 ```sql
@@ -191,6 +193,8 @@ Date_Sub: 									DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERV
 
 ```
 
+</br></br></br>
+
 ### Operators:
 
 ```sql
@@ -210,6 +214,8 @@ BETWEEN_: 									BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
 If_NUll:									<coulumn_name>/AggFunc IS NULL
 ```
 
+</br></br></br>
+
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
 ```sql
@@ -221,6 +227,8 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 											END ?AS?
 ```
 
+</br></br></br>
+
 ### [Numeric Functions And Operators:](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
 ```sql
@@ -231,6 +239,9 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 											DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
 	Remainder: 								MOD(#,Div#)
 ```
+
+</br>
+</br>
 
 ### Relationships/Joins:
 
@@ -248,6 +259,9 @@ EG: CUSTOMER can have many ORDERS but ORDER belongs to one CUSTOMER
 > Many_to_Many
 
 EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
+
+</br>
+</br>
 
 ```sql
 Cross_Joins: 								FROM <tablename,<tablename; (Just joins everything)
