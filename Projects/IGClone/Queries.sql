@@ -32,7 +32,7 @@ LIMIT 10;
 
 -- Most popular photo and who created it
 SELECT  *
-FROM photos
+FROM likes
 JOIN 
 
  
