@@ -29,4 +29,8 @@ LEFT JOIN comments
 WHERE photos.id IS NULL AND comments.id IS NULL
 LIMIT 10;
 
+
+-- Most popular photo and who created it
+SELECT  
+
  
