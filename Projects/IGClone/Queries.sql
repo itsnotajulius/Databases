@@ -31,7 +31,7 @@ LIMIT 10;
 
 
 -- Most popular photo and who created it
-SELECT  image_url, COUNT(photo_id) AS MOSTest
+SELECT  photos.image_url, COUNT(likes.photo_id) AS MOSTest
 FROM likes
 JOIN photos
     on likes.photo_id = photos.id
