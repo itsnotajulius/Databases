@@ -31,6 +31,8 @@ LIMIT 10;
 
 
 -- Most popular photo and who created it
-SELECT  
+SELECT  *
+FROM photos
+JOIN 
 
  
