@@ -56,7 +56,7 @@ Logical:						BOOL
     	Increment:				AUTO_INCREMENT
     	Update:					ON UPDATE updateTo#
     	Cascade:
-    	Unique:					UNIQUE (<coulumn_name>)
+    	Unique:					UNIQUE (<coulumn_name>)																		(So can only be one of them)
     							UNIQUE (<coulumn_name>,<coulumn_name>) 														(Used with constraint)
     	Check/Limit:			CHECK (expression)
 
