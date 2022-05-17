@@ -72,7 +72,7 @@ Logical:						BOOL
     Open DB:					Use <db_name>;
     Currect DB:					SELECT database();
     Exit DB:					exit
-	SubQueries:					SELECT sub
+	SubQueries:					SELECT subQuery
 ```
 
 ### Table:
