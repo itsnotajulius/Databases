@@ -106,7 +106,7 @@ Insert_: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,
 								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
 Multiple_Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
-Show_Table: 					SELECT \* FROM <tablename ?WHERE?;
+Show_Table: 					SELECT * FROM <tablename ?WHERE?;
 Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
 								SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
 								SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
