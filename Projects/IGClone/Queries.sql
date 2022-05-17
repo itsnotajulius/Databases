@@ -16,5 +16,10 @@ LIMIT 2;
 SELECT username 
 FROM users 
 JOIN photos ON users.id = photos.user_id 
-JOIN comments ON users.id = comments.user_id 
+WHERE photos.user_id IS NULL
 LIMIT 10;
+
+
+
+
+JOIN comments ON users.id = comments.user_id 
