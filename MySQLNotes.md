@@ -241,7 +241,7 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 ```
 
 </br>
-</br>
+</br></br>
 
 ### Relationships/Joins:
 
@@ -260,7 +260,6 @@ EG: CUSTOMER can have many ORDERS but ORDER belongs to one CUSTOMER
 
 EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
 
-</br>
 </br>
 
 ```sql
