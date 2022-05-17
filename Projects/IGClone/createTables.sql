@@ -68,7 +68,14 @@ CREATE TABLE photo_tags (
 
 
 -- Finding Users that commented on everything or nothing
-
+SELECT 100-100*(SELECT COUNT(distinct user_id)
+                FROM comments
+                WHERE user_id NOT IN(   SELECT user_id FROM likes 
+                                        GROUP BY user_id
+                                        HAVING count(photo_id)=257
+                                    )
+        ) / (SELECT COUNT(*) FROM users) 
+        AS 'The percentage(%)';
 
 
 
