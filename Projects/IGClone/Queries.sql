@@ -73,3 +73,31 @@ LIMIT 5;
 
 --  Find users that liked everything(BOTS)
 
+
+
+
+
+
+
+-- Finding Users that commented on everything or nothing
+--Version 1
+SELECT 100-100*(SELECT COUNT(DISTINCT user_id)
+                FROM comments
+                WHERE user_id NOT IN(   SELECT user_id 
+                                        FROM likes 
+                                        GROUP BY user_id
+                                        HAVING count(photo_id)=((SELECT COUNT(*) FROM photos))
+                                    )
+        ) / (SELECT COUNT(*) FROM users) 
+        AS 'The percentage(%)';
+
+
+--Version 2
+SELECT ROUND( (COUNT(*) / (SELECT COUNT(*) FROM users)*100) ,2) AS percent
+FROM
+(SELECT IFNULL(user_id,0) AS timess,COUNT(*) AS Count
+FROM users 
+LEFT JOIN comments
+    ON users.id=comments.user_id
+GROUP BY users.id
+HAVING timess=0 OR count=(SELECT COUNT(*) FROM photos)) AS total;
