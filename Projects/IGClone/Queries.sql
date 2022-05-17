@@ -12,14 +12,14 @@ GROUP BY DAYOFWEEK
 ORDER BY Total DESC
 LIMIT 2;
 
--- Find inactive Users
+-- Find inactive Users with no pictures
 SELECT username 
 FROM users 
 LEFT JOIN photos ON users.id = photos.user_id 
+LEFT JOIN comments ON users.id = comments.user_id
 WHERE photos.id IS NULL
 LIMIT 10;
 
 
 
-
-JOIN comments ON users.id = comments.user_id 
+ 
