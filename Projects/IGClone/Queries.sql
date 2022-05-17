@@ -39,6 +39,7 @@ GROUP BY likes.photo_id
 ORDER BY MOSTest DESC
 LIMIT 1;
 
+
 -- Most liked photo and user who created it
 SELECT 
     username,
