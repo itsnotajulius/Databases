@@ -38,8 +38,15 @@ CREATE TABLE likes (
 );
 
 
-
-
+-- Making the table for follows, needs to have a PRIMARY KEY of forgeign keys for uniqueness.(Could probs use UNIQUE also)
+CREATE TABLE follows (
+    follower_id INTEGER NOT NULL,
+    followee_id INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY(follower_id) REFERENCES users(id),
+    FOREIGN KEY(followee_id) REFERENCES users(id),
+    PRIMARY KEY(follower_id, followee_id)
+);
 
 
 
