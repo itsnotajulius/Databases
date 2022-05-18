@@ -77,9 +77,8 @@ FROM users
 JOIN likes
     ON users.id = likes.user_id
 GROUP BY users.id
-HAVING num_likes=257;
+HAVING num_likes=(SELECT COUNT(*) FROM photos);
 
-SELECT (SELECT COUNT(*) FROM photos);
 
 
 
