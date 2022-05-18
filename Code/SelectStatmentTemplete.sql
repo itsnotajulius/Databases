@@ -30,3 +30,8 @@ into_option: {
   | INTO DUMPFILE 'file_name'
   | INTO var_name [, var_name] ...
 }
+
+
+
+
+
