@@ -72,7 +72,7 @@ ORDER BY total DESC
 LIMIT 5; 
 
 --  Find users that liked everything(BOTS)
-SELECT COUNT(*)
+SELECT users.username, COUNT(*) AS num_likes
 FROM users
 JOIN likes
     ON users.id = likes.user_id
