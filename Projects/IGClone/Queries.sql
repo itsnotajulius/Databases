@@ -79,7 +79,7 @@ JOIN likes
 GROUP BY users.id
 HAVING num_likes=257;
 
-SELECT (SELECT COUNT(*) FROM likes);
+SELECT (SELECT COUNT(*) FROM likes GROUP BY user_id);
 
 
 
