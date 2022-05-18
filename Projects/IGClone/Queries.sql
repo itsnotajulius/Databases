@@ -79,7 +79,7 @@ JOIN likes
 GROUP BY users.id
 HAVING num_likes=257;
 
-SELECT (SELECT COUNT(*) FROM likes GROUP BY likes.user_id limit 1);
+SELECT (SELECT COUNT(*) FROM photos);
 
 
 
