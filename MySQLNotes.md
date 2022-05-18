@@ -102,6 +102,8 @@ Modify_Col: 					ALTER TABLE <tablename MODIFY <coulumn_name> dataType;
 Modify_Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 ```
 
+###
+
 ```sql
 Insert_: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
 								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
