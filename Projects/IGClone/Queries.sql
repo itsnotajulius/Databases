@@ -74,7 +74,9 @@ LIMIT 5;
 --  Find users that liked everything(BOTS)
 SELECT *
 FROM users
-JOIN likesON
+JOIN likes
+    ON users.id = likes.users_id
+LIMIT 10;
 
 
 
