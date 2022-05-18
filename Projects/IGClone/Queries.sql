@@ -93,11 +93,14 @@ SELECT 100-100*(SELECT COUNT(DISTINCT user_id)
 
 
 --Version 2
-SELECT ROUND( (COUNT(*) / (SELECT COUNT(*) FROM users)*100) ,2) AS percent
-FROM
+SELECT ROUND( (COUNT(*) / (100)*100) ,2) AS percent
+FROM toal_user that are bots
+
+
+
 (SELECT IFNULL(user_id,0) AS timess,COUNT(*) AS Count
 FROM users 
 LEFT JOIN comments
     ON users.id=comments.user_id
 GROUP BY users.id
-HAVING timess=0 OR count=(SELECT COUNT(*) FROM photos)) AS total;
+HAVING timess=0 OR count=(257) AS total;
