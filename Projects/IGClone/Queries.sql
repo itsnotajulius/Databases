@@ -79,7 +79,7 @@ LIMIT 5;
 
 
 
--- Finding Users that commented on everything or nothing
+-- Finding Users that commented on everything or nothing in percentage to users
 --Version 1
 SELECT 100-100*(SELECT COUNT(DISTINCT user_id)
                 FROM comments
