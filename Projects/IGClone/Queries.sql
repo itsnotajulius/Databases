@@ -71,7 +71,7 @@ GROUP BY tags.id
 ORDER BY total DESC 
 LIMIT 5; 
 
---  Find users that liked everything(BOTS)
+--  Find users that liked every photo(BOTS)
 SELECT users.username, COUNT(*) AS num_likes
 FROM users
 JOIN likes
