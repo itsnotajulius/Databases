@@ -75,7 +75,7 @@ LIMIT 5;
 SELECT *
 FROM users
 JOIN likes
-    ON users.id = likes.users_id
+    ON users.id = likes.user_id
 LIMIT 10;
 
 
