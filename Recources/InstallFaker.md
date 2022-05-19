@@ -4,7 +4,7 @@
 This is used to make alot of fake data.
 </br></br>
 
-<a href =https://github.com/faker-ruby><b>GITHUB</b></a>
+<a href =https://github.com/faker-js><b>GITHUB</b></a>
 
 <h3><b>Install</b></h3>
 You will need to use the following syntax when you install and require faker in your project:
