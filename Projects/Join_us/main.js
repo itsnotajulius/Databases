@@ -10,9 +10,6 @@ var connection = mysql.createConnection({
   database: "join_us", // the name of your db
 });
 
-//Defining query
-var query = "SELECT 1+1 AS solution";
-
 //Defining the connection and catching errors
 connection.connect(function (err) {
   if (err) {
@@ -23,11 +20,17 @@ connection.connect(function (err) {
   console.log("connected as id" + connection.threadId);
 });
 
+/*SELECTING DATA
+
+//Defining query
+var query = "SELECT 1+1 AS solution";
+
 //Querying the database
 connection.query(query, function (error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results[0].solution);
 });
+*/
 
 connection.end(function (err) {
   // The connection is terminated now
