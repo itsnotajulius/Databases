@@ -56,7 +56,17 @@ connection.query(
 
 //INSERTING DATA TAKE 3
 var s = "SELECT * FROM users";
+var insertStatmenmt = "INSERT INTO users SET ?";
 var person = { email: faker.internet.email() };
+
+connection.query(insertStatmenmt, person, function (error, results, fields) {
+  if (error) throw error;
+});
+
+connection.query(s, function (error, results, fields) {
+  if (error) throw error;
+  console.log(results);
+});
 
 connection.end(function (err) {
   // The connection is terminated now
