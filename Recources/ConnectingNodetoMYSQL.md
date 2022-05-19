@@ -19,7 +19,7 @@ var connection = mysql.createConnection({
 });
 ```
 
-Also, if your npm project is named "mysql" then you may encounter an error when trying to install the mysql npm package in the video that follows. The solution is simple, you can find it here.
+Also, if your npm project is named "mysql" then you may encounter an error when trying to install the mysql npm package in the video that follows. The solution is simple, you can find it <a href = >here.
 
 Please note, if you signed up for Goorm before October 29th, then see here for how to connect to MySQL with Node.
 
