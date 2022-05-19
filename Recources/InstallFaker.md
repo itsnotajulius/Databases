@@ -4,7 +4,7 @@
 
 <br>
 
-<h3>Install</h3>
+<h3><b>Install</b></h3>
 You will need to use the following syntax when you install and require faker in your project:
 
 Run this command in the terminal to install the package:
