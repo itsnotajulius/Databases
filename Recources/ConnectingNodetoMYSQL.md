@@ -1,4 +1,7 @@
 <h1>Note about connecting Node to MySQL</h1>
+
+</br>
+
 Hi Everyone!
 There are several important notes in this article, so please read through carefully.
 
