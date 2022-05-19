@@ -56,7 +56,7 @@ connection.query(
 
 //INSERTING DATA TAKE 3
 var s = "SELECT * FROM users";
-var person = { email: faker.Sally };
+var person = { email: faker. };
 
 connection.end(function (err) {
   // The connection is terminated now
