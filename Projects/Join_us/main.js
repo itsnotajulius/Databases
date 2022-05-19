@@ -80,7 +80,7 @@ for (let index = 0; index < 500; index++) {
   data.push([faker.internet.email(), faker.date.past()]);
 }
 
-connection.query(insertStatmenmt, function (error, results, fields) {
+connection.query(insertStatmenmt, data, function (error, results, fields) {
   if (error) throw error;
   console.log(results);
 });
