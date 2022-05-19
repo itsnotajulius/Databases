@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 });
 
 //Defining query
-var query = "SELECT 1+1";
+var query = "SELECT 1+1 AS solution";
 
 //Defining the connection and catching errors
 connection.connect(function (err) {
