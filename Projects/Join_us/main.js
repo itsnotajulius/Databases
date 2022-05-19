@@ -13,6 +13,7 @@ var connection = mysql.createConnection({
 //Defining query
 var query = "SELECT 1+1";
 
+//Defining the connection and catching errors
 connection.connect(function (err) {
   if (err) {
     console.error("error connecting: " + err.stack);
@@ -22,6 +23,7 @@ connection.connect(function (err) {
   console.log("connected as id" + connection.threadId);
 });
 
+//Querying the database
 connection.query(query, function (error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results[0].solution);
