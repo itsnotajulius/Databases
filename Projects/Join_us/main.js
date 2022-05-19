@@ -77,7 +77,7 @@ var insertStatmenmt = "INSERT INTO users (email,created_at) VALUES ?";
 var data = [];
 
 for (let index = 0; index < 500; index++) {
-  data;
+  data.push([faker.internet.email(), faker.date.past()]);
 }
 
 connection.query(insertStatmenmt, function (error, results, fields) {
