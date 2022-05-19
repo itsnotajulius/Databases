@@ -93,7 +93,7 @@ Logical:						BOOL
 ### ALTER Table:
 
 ```sql
-Rename_Table: 					ALTER TABLE <tablename> CHANGE <coulumn_name> 									<new_table_name> dataType;
+Rename_Table: 					ALTER TABLE <tablename> CHANGE <coulumn_name> <new_table_name> dataType;
 Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name> dataType;
 Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
 Drop_Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
@@ -119,7 +119,7 @@ Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tabl
 Update_: 						UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
 
 Delete_: 						DELETE FROM <tablename WHERE <coulumn_name>=searchValue;
-Delete_all: 					DELETE FROM cats;
+Delete_all_data:				DELETE FROM cats;
 Warnings: 						SHOW WARNINGS;
 ```
 
