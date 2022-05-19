@@ -3,3 +3,5 @@ CREATE TABLE users(
     created_at TIMESTAMP DEFAULT NOW(),
     PRIMARY KEY(email)
 );
+
+INSERT INTO (email) VALUES('lkasl@gmail.com'),('Bob@gmail.com');
