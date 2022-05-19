@@ -65,7 +65,10 @@ connection.query(insertStatmenmt, person, function (error, results, fields) {
 
 connection.query(s, function (error, results, fields) {
   if (error) throw error;
-  console.log(results);
+  for (var i = 0; i < results.length; i++) {
+    console.log(results[i].email);
+  }
+  console.log(results.length);
 });
 
 connection.end(function (err) {
