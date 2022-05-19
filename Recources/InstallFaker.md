@@ -48,4 +48,5 @@ Simple Fix:
 
 ---
 
-P.S. If you're wondering what the package-lock.json file is, that was automatically created when you ran the npm init -y command, see here to learn all about it.
+For more insight into `package-lock.json` created by `npm init -y command`.
+Click here
