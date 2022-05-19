@@ -44,10 +44,14 @@ connection.query(q, function (error, results, fields) {
 //INSTERTING DATA TAKE 2
 var q = { email: "matjulgaming@gmail.com" };
 
-connection.query("SELECT 1 + 1 AS colName", function (error, results, fields) {
-  if (error) throw error;
-  console.log("The solution is: ", results[0].colName);
-});
+connection.query(
+  "INSERT INTO users SET ?",
+  q,
+  function (error, results, fields) {
+    if (error) throw error;
+    console.log("The solution is: ", results);
+  }
+);
 
 connection.end(function (err) {
   // The connection is terminated now
