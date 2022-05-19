@@ -9,3 +9,7 @@ var connection = mysql.createConnection({
   user: "root", // your root username
   database: "join_us", // the name of your db
 });
+
+//Defining query
+
+connection;
