@@ -12,8 +12,11 @@ var connection = mysql.createConnection({
 
 //Defining query
 
-connection.connect(function (err) {if (err) {console.error(
-error connecting: 
-+ stack return;} console.log(
-connected as id 
- + connection.threadId);});
+connection.connect(function (err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+
+  console.log("connected as id" + connection.threadId);
+});
