@@ -74,6 +74,11 @@ connection.query(s, function (error, results, fields) {
 
 var s = "SELECT * FROM users";
 var insertStatmenmt = "INSERT INTO users (email,created_at) VALUES ?";
+var data = [];
+
+for (let index = 0; index < 500; index++) {
+  data;
+}
 
 connection.query(insertStatmenmt, function (error, results, fields) {
   if (error) throw error;
