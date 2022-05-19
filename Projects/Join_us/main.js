@@ -32,7 +32,7 @@ connection.query(query, function (error, results, fields) {
 });
 */
 
-//INSERTING DATA
+//INSERTING DATA TAKE 1
 var q = "INSER INTO users(emails) VALUES (rusty@gamil.com)";
 
 connection.query(q, function (error, results, fields) {
