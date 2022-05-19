@@ -41,7 +41,7 @@ connection.query(q, function (error, results, fields) {
 });
 */
 
-//INSTERTING DATA TAKE 2
+/*INSTERTING DATA TAKE 2
 var q = { email: "matjulgaming@gmail.com" };
 
 connection.query(
@@ -52,6 +52,11 @@ connection.query(
     console.log("The solution is: ", results);
   }
 );
+*/
+
+//INSERTING DATA TAKE 3
+var s = "SELECT * FROM users";
+var person = {email:  faker.}
 
 connection.end(function (err) {
   // The connection is terminated now
