@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngitem.com%2Fpimgs%2Fm%2F229-2293354_by-yenty-jap-fake-tattoo-panda-panda-fake.png&imgrefurl=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2Fiboiwhx_by-yenty-jap-fake-tattoo-panda-panda-fake%2F&tbnid=zr_VwYtBYovztM&vet=12ahUKEwiv1u7U1-v3AhWVwoUKHbdJDIgQMygCegUIARC7AQ..i&docid=h-8L0EixkfxUcM&w=860&h=1195&q=faker%20image%20panda&ved=2ahUKEwiv1u7U1-v3AhWVwoUKHbdJDIgQMygCegUIARC7AQ" alt="PICTURE" width="200"/>
+  <img src="" alt="PICTURE" width="200"/>
   <h1>Faker</h1>
   <p>Generate massive amounts of fake (but realistic) data for testing and development.</p>
   
