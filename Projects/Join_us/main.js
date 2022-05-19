@@ -12,4 +12,4 @@ var connection = mysql.createConnection({
 
 //Defining query
 
-connection;
+connection.connect(function name(params) {});
