@@ -1,8 +1,12 @@
 <h1>Faker Install</h1>
 
-You will need to use the following syntax when you install and require faker in your project:
+**Faker** that allows you to create fake placeholder data to use in your applications.
 
 <br>
+
+<h3>Install</h3>
+You will need to use the following syntax when you install and require faker in your project:
+
 Run this command in the terminal to install the package:
 
 ```linux
@@ -17,7 +21,6 @@ const { faker } = require('@faker-js/faker');
 
 <br><br>
 
-**Faker** that allows you to create fake placeholder data to use in your applications.
 When you installing might encounter some warnings.
 
 - They telling you that your project doesn't have a package.json file.
@@ -43,10 +46,9 @@ Simple Fix:
 
 - All you need to do is open the package.json file that was created by the npm init -y
   - command and `change` the line that says: `"name": "mysql"`, to be: `"name": "mysql1"`
+- <a href =https://www.loom.com/share/db336b7433164b8284c6248cddb4da1d>Demo</a>
 
-<a href =https://www.loom.com/share/db336b7433164b8284c6248cddb4da1d>Demo</a>
-
----
+## <br>
 
 For more insight into `package-lock.json` created by `npm init -y command`.
-Click here
+<a href = https://medium.com/coinmonks/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8>Click here</a>
