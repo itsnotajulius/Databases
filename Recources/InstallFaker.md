@@ -2,7 +2,9 @@
 
 **Faker** that allows you to create fake placeholder data to use in your applications.
 This is used to make alot of fake data.
-<br>
+</br></br>
+
+<a href =https://github.com/faker-ruby><b>GITHUB</b></a>
 
 <h3><b>Install</b></h3>
 You will need to use the following syntax when you install and require faker in your project:
@@ -19,18 +21,18 @@ Enter this code in your file to require it:
 const { faker } = require('@faker-js/faker');
 ```
 
-<br><br>
+</br></br>
 
 When you installing might encounter some warnings.
 
 - They telling you that your project doesn't have a package.json file.
   You can safely ignore them as it is non-consequential at this point in the exercise.
 
-<br>
+</br>
 
 - If you'd like to prevent the `warning messages` from occurring then you can simply create your app.js file in the project folder then run the command npm init -y which will create a corresponding package.json file.
 
-<br><br>
+</br></br>
 
 <h3>Please note</h3>
 If your container name is mysql then running the npm init -y command will automatically name your npm project mysql, also. This is problematic because a few lectures from now you will be installing the mysql npm package and it won't allow you to install that package to an npm project with the same name.
