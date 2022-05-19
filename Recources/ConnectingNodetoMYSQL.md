@@ -3,18 +3,21 @@
 </br>
 
 Hi Everyone!
-There are several important notes in this article, so please read through carefully.
+Please read through carefully.
 
 Firstly, we now recommend using Goorm (instead of Cloud9), if you signed up for Goorm on, or after, October 29th, 2019 then you shouldn't have any problem with the instructions in the next video.
 However, one very important thing to remember is that your username for connecting to mysql will be root (see code example below):
 
-var mysql = require('mysql');
+```js
+var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-host : 'localhost',
-user : 'root',
-database : 'join_us'
+  host: "localhost",
+  user: "root",
+  database: "join_us",
 });
+```
+
 The code above will be explained in the next video.
 
 Also, if your npm project is named "mysql" then you may encounter an error when trying to install the mysql npm package in the video that follows. The solution is simple, you can find it here.
