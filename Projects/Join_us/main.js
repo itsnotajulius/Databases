@@ -32,6 +32,14 @@ connection.query(query, function (error, results, fields) {
 });
 */
 
+//INSERTING DATA
+var q = "INSER INTO users(emails) VALUES (rusty@gamil.com)";
+
+connection.query(q, function (error, results, fields) {
+  if (error) throw error;
+  console.log("The solution is: ", results);
+});
+
 connection.end(function (err) {
   // The connection is terminated now
 });
