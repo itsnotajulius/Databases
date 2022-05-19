@@ -11,13 +11,13 @@ You will need to use the following syntax when you install and require faker in 
 
 Run this command in the terminal to install the package:
 
-```linux
+```shell
 npm install @faker-js/faker --save-dev
 ```
 
 Enter this code in your file to require it:
 
-```linux
+```shell
 const { faker } = require('@faker-js/faker');
 ```
 
