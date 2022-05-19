@@ -11,6 +11,7 @@ var connection = mysql.createConnection({
 });
 
 //Defining query
+var query = "SELECT 1+1";
 
 connection.connect(function (err) {
   if (err) {
@@ -20,3 +21,5 @@ connection.connect(function (err) {
 
   console.log("connected as id" + connection.threadId);
 });
+
+connection.qu;
