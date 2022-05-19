@@ -1,5 +1,5 @@
 <div align="center">
-  <!<img src="" alt="PICTURE" width="200"/>>
+  <!-- <img src="" alt="PICTURE" width="200"/> -->
   <h1>Faker</h1>
   <p>Generate massive amounts of fake (but realistic) data for testing and development.</p>
   
