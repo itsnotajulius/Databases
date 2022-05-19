@@ -54,7 +54,7 @@ connection.query(
 );
 */
 
-//INSERTING DATA TAKE 3
+/*INSERTING DATA TAKE 3
 var s = "SELECT * FROM users";
 var insertStatmenmt = "INSERT INTO users SET ?";
 var person = { email: faker.internet.email() };
@@ -69,6 +69,15 @@ connection.query(s, function (error, results, fields) {
     console.log(results[i].email);
   }
   console.log(results.length);
+});
+*/
+
+var s = "SELECT * FROM users";
+var insertStatmenmt = "INSERT INTO users (email,created_at) VALUES ?";
+
+connection.query(insertStatmenmt, function (error, results, fields) {
+  if (error) throw error;
+  console.log(results);
 });
 
 connection.end(function (err) {
