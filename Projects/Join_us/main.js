@@ -32,12 +32,21 @@ connection.query(query, function (error, results, fields) {
 });
 */
 
-//INSERTING DATA TAKE 1
+/*INSERTING DATA TAKE 1
 var q = "INSER INTO users(emails) VALUES (rusty@gamil.com)";
 
 connection.query(q, function (error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results);
+});
+*/
+
+//INSTERTING DATA TAKE 2
+var q = { email: "matjulgaming@gmail.com" };
+
+connection.query("SELECT 1 + 1 AS colName", function (error, results, fields) {
+  if (error) throw error;
+  console.log("The solution is: ", results[0].colName);
 });
 
 connection.end(function (err) {
