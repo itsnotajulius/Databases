@@ -1,7 +1,7 @@
 <h1>Faker Install</h1>
 
 **Faker** that allows you to create fake placeholder data to use in your applications.
-
+This is used to make alot of fake data.
 <br>
 
 <h3><b>Install</b></h3>
