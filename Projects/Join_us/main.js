@@ -21,7 +21,7 @@ connection.connect(function (err) {
 });
 
 var q =
-  "SELECT created_at AS ealiest_date FROM users ORDER BY ealiest_date LIMIT 1";
+  "SELECT MONTHNAME(created_at) AS month, COUNT(*) AS count FROM users GROUP BY created_at ORDER BY ealiest_date LIMIT 1";
 
 connection.query(q, function (error, results, fields) {
   if (error) throw error;
