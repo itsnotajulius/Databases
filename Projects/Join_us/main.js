@@ -20,7 +20,8 @@ connection.connect(function (err) {
   console.log("connected as id" + connection.threadId);
 });
 
-var q = "SELECT created_at AS ealiest_date FROM users ORDER BY ealiest_date";
+var q =
+  "SELECT created_at AS ealiest_date FROM users ORDER BY ealiest_date LIMIT 1";
 
 connection.query(q, function (error, results, fields) {
   if (error) throw error;
