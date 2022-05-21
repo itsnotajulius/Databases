@@ -1,6 +1,6 @@
 // Making connections to the NPM faker and mysql. Look in Resources for how to set them up
 
-const { faker } = require("@faker-js/faker");
+const { faker } = require("faker");
 var mysql = require("mysql");
 
 //Connecting to database
