@@ -1,6 +1,5 @@
 // Making connections to the NPM faker and mysql. Look in Resources for how to set them up
 
-const { faker } = require("faker");
 var mysql = require("mysql");
 
 //Connecting to database
@@ -26,10 +25,14 @@ var $gmail = "%gmail%";
 var $yahoo = "%yahoo%";
 var $hotmail = "%hotmail%";
 
-connection.query(q, function (error, results, fields) {
-  if (error) throw error;
-  console.log(results);
-});
+connection.query(
+  q,
+  [$gmail, $yahoo, $hotmail],
+  function (error, results, fields) {
+    if (error) throw error;
+    console.log(results);
+  }
+);
 
 connection.end(function (err) {
   // The connection is terminated now
