@@ -300,6 +300,10 @@ CREATE TRIGGER trigger_name
 	END;
 ```
 
+- Trigger_Time
+  - BEFORE
+  - AFTER
+
 </br>
 
 # THOERY
