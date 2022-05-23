@@ -8,10 +8,13 @@
   - <a href = "#constraints">Constraints</a>
   - <a href = "#mysql-commandline">MySQL CommandLine</a>
   - [Table](#table)
-  - ALTER Table
+  - [Alter-Table](#alter-table)
+  - [Table](#table)
+  - [Table](#alter-table)
 
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
+  - [Refining Select](#refining-select)
 
 </br>
 </br>
@@ -151,6 +154,8 @@ LOCATE_:									LOCATE('searchText', 'Text');
 ```
 
 > LOWER() and UPPER() needs to convert binary Strings
+
+<br/>
 
 ### Refining Select:
 
