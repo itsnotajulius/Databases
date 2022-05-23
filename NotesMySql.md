@@ -8,6 +8,7 @@
   - <a href = "#constraints">Constraints</a>
   - <a href = "#mysql-commandline">MySQL CommandLine</a>
   - [Table](#table)
+  - ALTER Table
 
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
