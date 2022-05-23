@@ -293,11 +293,11 @@ Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if pri
 
 Syntax:
 
-```msql
+```sql
 CREATE TRIGGER trigger_name
 	trigger_time trigger_event ON table_name FOR EACH ROW
 	BEGIN
-	END
+	END;
 ```
 
 </br>
