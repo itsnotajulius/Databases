@@ -15,6 +15,8 @@
 - [Functions](#functions)
   - [String Functions](#a-id"string-functions"-href--"httpsdevmysqlcomdocrefman80enstring-functionshtml"string-functionsa)
   - [Refining Select](#refining-select)
+  - [Aggregate Functions](#aggregate-functionshttpsdevmysqlcomdocrefman80enaggregate-functions-and-modifiershtml)
+  - [Date Time Functions](#date-time-functionshttpsdevmysqlcomdocrefman80endate-and-time-functionshtml)
 
 </br>
 </br>
