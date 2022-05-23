@@ -929,3 +929,20 @@ INSERT INTO users(user, age) VALUES("Bruce",27), ("Clark",16); --Wont Work
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+DELIMITER $$
+
+CREATE TRIGGER must_be_adult
+    BEFORE INSERT ON users FOR EACH ROW
+    BEGIN
+        IF NEW.age < 18
+        THEN
+            SIGNAL SQLSTATE '45000'
+                SET MESSAGE_TEXT = 'Must be an ADULT!!';
+        END IF;
+    END;
+
+$$
+
+DELIMITER;
