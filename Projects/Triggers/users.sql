@@ -7,3 +7,6 @@ CREATE TABLE user(
     age INT
 );
 
+INSERT INTO users(user, age) VALUES("Matthew",26) ("Rose",17);
+
+
