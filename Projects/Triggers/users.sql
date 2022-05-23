@@ -18,5 +18,5 @@ DROP TRIGGER users.must_be_adult;
 */
 
 
-
+INSERT INTO users(user, age) VALUES("Bruce",27), ("Clark",16);
 
