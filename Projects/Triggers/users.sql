@@ -5,3 +5,5 @@ CREATE TABLE user(
     user VARCHAR(100)  NOT NUll DEFAULT "Steve",
     age INT
 );
+
+USE trigger_demo;
