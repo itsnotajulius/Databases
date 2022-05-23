@@ -100,7 +100,7 @@ Logical:						BOOL
 ### ALTER Table:
 
 ```sql
-Rename_Table: 					ALTER TABLE <tablename> RENAME <old_table_name> <new_table_name> dataType;
+Rename_Table: 					ALTER TABLE <old_table_name>  RENAME <new_table_name> dataType;
 Column: 					ALTER TABLE <tablename> CHANGE <coulumn_name> <new_table_name> dataType;
 Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name> dataType;
 Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
