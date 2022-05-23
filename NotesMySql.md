@@ -292,6 +292,8 @@ Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if pri
 
 ### Triggers:
 
+Display Triggers: SHOW TRIGgERS;
+
 Syntax:
 
 <br/>
