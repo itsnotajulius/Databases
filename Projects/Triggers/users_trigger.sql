@@ -6,7 +6,7 @@ CREATE TRIGGER must_be_adult
         IF NEW.age < 18
         THEN
             SIGNAL SQLSTATE '45000'
-                SET MESSAGE_TEXT = 'Must be an ADULT!!'
+                SET MESSAGE_TEXT = 'Must be an ADULT!!';
         END IF;
     END;
 
