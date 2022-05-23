@@ -11,4 +11,10 @@ ALTER TABLE user RENAME users;
 
 INSERT INTO users(user, age) VALUES("Matthew",26), ("Rose",17);
 
+source users_trigger.sql
+
+/*
+DROP TRIGGER users.
+*/
+
 
