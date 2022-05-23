@@ -9,7 +9,8 @@ CREATE TABLE user(
 
 ALTER TABLE user RENAME users; 
 
-INSERT INTO users(user, age) VALUES("Matthew",26), ("Rose",17);
+INSERT INTO users(user, age) VALUES("Matthew",26), ("Rose",17); -- Will work
+
 
 source users_trigger.sql
 
@@ -18,5 +19,5 @@ DROP TRIGGER users.must_be_adult;
 */
 
 
-INSERT INTO users(user, age) VALUES("Bruce",27), ("Clark",16);
+INSERT INTO users(user, age) VALUES("Bruce",27), ("Clark",16); --Wont Work
 
