@@ -14,7 +14,7 @@ INSERT INTO users(user, age) VALUES("Matthew",26), ("Rose",17);
 source users_trigger.sql
 
 /*
-DROP TRIGGER users.
+DROP TRIGGER users.must_be_adult;
 */
 
 
