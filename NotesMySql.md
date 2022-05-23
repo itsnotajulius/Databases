@@ -111,16 +111,18 @@ Modify_Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 
 ###
 
+♣
+
 ```sql
 Insert_: 						INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..);
 								INSERT INTO table_name(column_name, column_name,..) VALUES (data/dateTimeFunc, data/dateTimeFunc,..);
 Multiple_Insert: 				INSERT INTO table_name(column_name, column_name,..) VALUES (data,data,..), (data,data,..), (data,data,..);
 
 Show_Table: 					SELECT * FROM <tablename> ?WHERE?;
-Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename ?WHERE?;
-								SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?WHERE?;
-								SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?RefineSel? ?WHERE? ?RefineSel?;
-								SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?AggFunc? ?RefineSel?;
+Show columns: 					SELECT <coulumn_name> ?AS?, <coulumn_name> ?AS?,.. FROM <tablename> ?abbri? ?WHERE?;
+								SELECT ?StrFUNC? ?AS?, <coulumn_name ?AS?, FROM <tablename ?abbri?  ?WHERE?;
+								SELECT ?RefineSel? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?abbri?  ?RefineSel? ?WHERE? ?RefineSel?;
+								SELECT ?AggFunc? ?AS?, <coulumn_name> ?AS?, FROM <tablename> ?abbri?  ?AggFunc? ?RefineSel?;
 								SELECT <tablename>.<coulumn_name> ?AS?, FROM ?Joins? ?AggFunc? ;
 
 Update_: 						UPDATE <tablename SET <coulumn_name>=newValue, <coulumn_name>=newValue,... WHERE <coulumn_name>=searchValue;
@@ -276,10 +278,10 @@ EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
 
 ```sql
 Cross_Joins: 								FROM <tablename,<tablename; (Just joins everything)
-Implicit_Join:	 							FROM <tablename,<tablename WHERE table1.primeCol = table2.ForgiegnCol;
-Explicit_Join:	 							FROM <tablename JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-Left_Join: 									FROM <tablename LEFT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
-Right_Join: 								FROM <tablename RIGHT JOIN <tablename ON table1.primeCol = table2.ForgiegnCol;
+Implicit_Join:	 							FROM <tablename ?abbri? ,<tablename ?abbri?  WHERE table1.primeCol = table2.ForgiegnCol;
+Explicit_Join:	 							FROM <tablename ?abbri?  JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
+Left_Join: 									FROM <tablename ?abbri?  LEFT JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
+Right_Join: 								FROM <tablename> ?abbri?  RIGHT JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
 Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
