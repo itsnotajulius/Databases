@@ -287,7 +287,20 @@ Right_Join: 								FROM <tablename> ?abbri?  RIGHT JOIN <tablename> ?abbri?  ON
 Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 ```
 
-</br></br></br>
+</br></br>
+
+### Triggers:
+
+Syntax:
+
+```msql
+CREATE TRIGGER trigger_name
+trigger_time trigger_event ON table_name FOR EACH ROW
+BEGIN
+END
+```
+
+</br>
 
 # THOERY
 
