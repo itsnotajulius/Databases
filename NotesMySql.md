@@ -298,3 +298,9 @@ Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if pri
 | **MySQL use**         |     | Method of accessing and manipulating data (DBMS) Relational Database eg. MYSQL, PstgreSQL, SQLite, |
 | **Columns**           |     |                                                                      Headers / Col_Name / Variable |
 | **Rows**              |     |                                                                                               Data |
+
+<br/>
+
+# Extra
+
+- Table abbreviation:
