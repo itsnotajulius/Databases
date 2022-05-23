@@ -7,7 +7,7 @@ CREATE TABLE user(
     age INT
 );
 
-ALTER TABLE user 
+ALTER TABLE user RENAME users; 
 
 INSERT INTO users(user, age) VALUES("Matthew",26), ("Rose",17);
 
