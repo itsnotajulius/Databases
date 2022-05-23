@@ -292,7 +292,12 @@ Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if pri
 
 ### Triggers:
 
-Display Triggers: SHOW TRIGgERS;
+<br/>
+
+```sql
+Display Triggers: 				SHOW TRIGGERS;
+Delete_Trigger					DROP TRIGGER trigger_name;
+```
 
 Syntax:
 
