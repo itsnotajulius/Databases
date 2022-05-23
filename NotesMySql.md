@@ -101,6 +101,7 @@ Logical:						BOOL
 
 ```sql
 Rename_Table: 					ALTER TABLE <tablename> CHANGE <coulumn_name> <new_table_name> dataType;
+Column: 					ALTER TABLE <tablename> CHANGE <coulumn_name> <new_table_name> dataType;
 Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name> dataType;
 Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
 Drop_Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
