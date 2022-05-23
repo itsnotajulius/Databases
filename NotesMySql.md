@@ -303,6 +303,10 @@ CREATE TRIGGER trigger_name
 - Trigger_Time
   - BEFORE
   - AFTER
+- Trigger_event
+  - INSERT
+  - UPDATE
+  - DELETE
 
 </br>
 
