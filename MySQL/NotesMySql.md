@@ -27,6 +27,8 @@
 
 ### [DataTYPE](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
 
+---
+
 ```sql
 Number_:       					INT
 								int(#)
@@ -46,6 +48,8 @@ Logical:						BOOL
 ```
 
 ### [Constraints](https://www.w3schools.com/sql/sql_constraints.asp)
+
+---
 
     Null:
     	Setting Null:			Mean not defined do nothing
@@ -70,6 +74,8 @@ Logical:						BOOL
 
 ### MySQL Commandline
 
+---
+
 ```sql
     Run query files:			source filename.sql; - If in same directory
     							source path/<filename>.sql
@@ -83,6 +89,8 @@ Logical:						BOOL
 ```
 
 ### Table:
+
+---
 
 ```sql
 	Create Tables: 				CREATE TABLE tablenames
@@ -99,9 +107,11 @@ Logical:						BOOL
 
 ### ALTER Table:
 
+---
+
 ```sql
 Rename_Table: 					ALTER TABLE <old_table_name>  RENAME <new_table_name>
-Column: 					ALTER TABLE <tablename> CHANGE <coulumn_name> <new_column_name> dataType;
+Column: 					    ALTER TABLE <tablename> CHANGE <coulumn_name> <new_column_name> dataType;
 Add_Columns: 					ALTER TABLE <tablename ADD <coulumn_name> dataType;
 Add_Constraint: 				ALTER TABLE <tablename ADD ?Constraint?
 Drop_Columns: 					ALTER TABLE <tablename DROP <coulumn_name>;
@@ -113,6 +123,8 @@ Modify_Col: 					ALTER TABLE <tablename ALTER <coulumn_name> dataType;
 <br/>
 
 ### Updating and Filtering
+
+---
 
 <br/>
 
@@ -135,11 +147,14 @@ Delete_all_data:				DELETE FROM cats;
 Warnings: 						SHOW WARNINGS;
 ```
 
----
+<br/>
+<br/>
 
 ## Functions
 
 ### <a id="String Functions" href = "https://dev.mysql.com/doc/refman/8.0/en/string-functions.html">String Functions:</a>
+
+---
 
 NOTE: Cause they are functions they can be used by each other.
 
@@ -165,6 +180,8 @@ LOCATE_:									LOCATE('searchText', 'Text');
 <br/>
 
 ### Refining Select:
+
+---
 
 ```sql
 WHERE__: 									WHERE <coulumn_name>/NumFunc ?LogOP? <coulumn_name>/#/'Text'/ (subQuery) (SubQuery mustnt have \*)
@@ -262,6 +279,8 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 
 ### Relationships/Joins:
 
+---
+
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
@@ -292,16 +311,14 @@ Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if pri
 
 ### Triggers:
 
+---
+
 <br/>
 
 ```sql
 Display Triggers: 				SHOW TRIGGERS;
 Delete_Trigger					DROP TRIGGER trigger_name;
 ```
-
-Syntax:
-
-<br/>
 
 Create:
 
