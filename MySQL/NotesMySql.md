@@ -284,28 +284,46 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 All below is to do with relationships between tables and ways of Selecting data where they have relationships.
 Setting up relationships is set when creating a table or altering the column. There are 3 types of relationships:
 
-> One_to_One
-
-EG: PERSON has one ID and one ID belongs to one PERSON
-
-> One_to_Many
-
-EG: CUSTOMER can have many ORDERS but ORDER belongs to one CUSTOMER
-
-> Many_to_Many
-
-EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
+- One_to_One
+  - EG: PERSON has one ID and one ID belongs to one PERSON
+- One_to_Many
+  - EG: CUSTOMER can have many ORDERS but ORDER belongs to one CUSTOMER
+- Many_to_Many
+  - EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
 
 </br>
 
-```sql
-Cross_Joins: 								FROM <tablename,<tablename; (Just joins everything)
-Implicit_Join:	 							FROM <tablename ?abbri? ,<tablename ?abbri?  WHERE table1.primeCol = table2.ForgiegnCol;
-Explicit_Join:	 							FROM <tablename ?abbri?  JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
-Left_Join: 									FROM <tablename ?abbri?  LEFT JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
-Right_Join: 								FROM <tablename> ?abbri?  RIGHT JOIN <tablename> ?abbri?  ON table1.primeCol = table2.ForgiegnCol;
-Cascade: 									ON DELETE CASCADE (Add on foriegn key will delete entry if primary key of other table entry is deleted)
-```
+- Self Join:
+  - `FROM tablename1,tablename2 ; (Just joins everything)`
+- Implicit_Join:
+  - `FROM tablename1 ?abbri? ,tablename2 ?abbri?`
+  - `WHERE tablename1.primeCol = tablename2.ForgiegnCol ;`
+- Explicit_Join:
+  - `FROM tablename1 ?abbri?`
+  - `JOIN tablename2 ?abbri? ON tablename1.primeCol = tablename2.ForgiegnCol ;`
+- Cross Join:
+  - `FROM tablename1`
+  - `CROSS JOIN tablename2 ;`
+- Left_Join:
+  - `FROM tablename1 ?abbri?`
+  - `LEFT JOIN tablename2 ?abbri? ON tablename1.primeCol = tablename2.ForgiegnCol ;`
+- Right_Join:
+  - `FROM tablename1 ?abbri? `
+  - `RIGHT JOIN tablename2 ?abbri? ON tablename1.primeCol = tablename2.ForgiegnCol ;`
+- UNION:
+- `SELECT columns_name FROM tablename1`
+- `UNION ?ALL?`
+- `SELECT columns_name FROM tablename2 ;`
+
+  - Combination of two or more `SELECT` statements
+    - SELECTs must have same #Cols
+    - Cols data types
+    - Cols in the same order
+    - Use `UNION ALL` to allow duplicates
+
+- Cascade:
+  - `ON DELETE CASCADE`
+  - (Add on foriegn key will delete entry if primary key of other table entry is deleted)
 
 </br></br>
 
