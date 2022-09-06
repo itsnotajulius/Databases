@@ -265,17 +265,23 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 
 ### [Numeric Functions And Operators:](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
-```sql
- 	Plus: 									#+#
-    Minus: 									#-#
-	Multiply: 								#\*#
-	Divide: 								#/# (Calculed with BIGINT)
-											DIV(3,Div#) (Converted to DECIMAL to Cal and Converted to BIGINT)
-	Remainder: 								MOD(#,Div#)
-```
+---
+
+- Plus:
+  - `# + #`
+- Minus:
+  - `# - #`
+- Multiply:
+  - `# * #`
+- Divide:
+  - `N / Div#` (Calculed with BIGINT)
+  * `N DIV Div#` (Converted to DECIMAL to Cal and Converted to BIGINT)
+- Remainder:
+  - `MOD(N,Mod#)`
+  - `N % M`
 
 </br>
-</br></br>
+</br>
 
 ### Relationships/Joins:
 
