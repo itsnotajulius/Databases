@@ -178,6 +178,8 @@ LOCATE_:									LOCATE('searchText', 'Text');
 > LOWER() and UPPER() needs to convert binary Strings
 
 <br/>
+<br/>
+<br/>
 
 ### Refining Select:
 
@@ -192,7 +194,12 @@ LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%end
 Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
 ```
 
+<br/>
+<br/>
+
 ### [Aggregate Functions:](https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions-and-modifiers.html)
+
+---
 
 ```sql
 COUNT_: 									COUNT(?RefineSel? <coulumn_name>/StrFUNC,<coulumn_name>/StrFUNC,...)
@@ -229,39 +236,33 @@ Date_Sub: 									DATE_SUB(<coulumn_name>/'dateTimeFormat'/dateTimeFunc, INTERV
 
 </br></br></br>
 
-### Operators:
-
-```sql
-Equal 										=
-Not_Equal 									!=
-Greater Than: 								>
-											>=
-Less Than: 									<
-											<=
-LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
-AND_: 										?LogOp? AND ?LogOp? ....
-OR_: 										?LogOp? OR ?LogOp? ....
-IN_: 										IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
-IN_: 										NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
-BETWEEN_: 									BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
-If_NUll:									<coulumn_name>/AggFunc IS NULL
-```
-
-</br></br></br>
-
 ### [Flow Control Functions:](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
-```sql
-	If_Statments: 							If(equation,trueAns,falseAns)
-    IfNul_l: 								IFNULL(checkIfNull, answerIfNull)
-	Cases: 									CASE
-												WHEN Logical THEN 'answer'
-												ELSE 'falseAnswer'
-											END ?AS?
-```
+- If Statments:
+  - `If(equation,trueAns,falseAns)`
+- If Null:
+  - `IFNULL(checkIfNull, answerIfNull)`
+- Cases:
+  ```sql
+    CASE
+      WHEN Logical THEN 'answer'
+      ELSE 'falseAnswer'
+    END ?AS?
+  ```
 
-</br></br></br>
+</br></br>
+
+### [Advanced Functions](https://www.w3schools.com/sql/sql_ref_mysql.asp)
+
+---
+
+- Coalesce:
+  - `COALESCE(val1, val2, ...., val_n)`
+  - returns the first non-null value in a list
+
+</br>
+<br/>
+<br/>
 
 ### [Numeric Functions And Operators:](https://dev.mysql.com/doc/refman/8.0/en/numeric-functions.html)
 
@@ -283,7 +284,30 @@ If_NUll:									<coulumn_name>/AggFunc IS NULL
 </br>
 </br>
 
-### Relationships/Joins:
+### Operators:
+
+```sql
+Equal 										=
+Not_Equal 									!=
+Greater Than: 								>
+											>=
+Less Than: 									<
+											<=
+LIKE_: 										WHERE <coulumn_name>/StrFUNC LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+Not_LIKE: 									WHERE <coulumn_name>/StrFUNC NOT LIKE '%inText%'/'startText%'/'%endText'/'**'/'%\%%'/'%\_%'
+AND_: 										?LogOp? AND ?LogOp? ....
+OR_: 										?LogOp? OR ?LogOp? ....
+IN_: 										IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Equal)(x,y can be different datatypes)
+IN_: 										NOT IN(x,y,....) (Lets you do multiple OR searches on column but with Logic of Not Equal)(x,y can be different datatypes)
+BETWEEN_: 									BETWEEN x AND y (>=x AND <=y)(Use CAST('' AS DATATYPE))
+If_NUll:									<coulumn_name>/AggFunc IS NULL
+```
+
+</br></br></br>
+
+## Joins
+
+### Relationships
 
 ---
 
@@ -298,6 +322,10 @@ Setting up relationships is set when creating a table or altering the column. Th
   - EG: AUTHORS can have many BOOKS and BOOKS can have many AUTHORS
 
 </br>
+
+### Joins:
+
+---
 
 - Self Join:
   - `FROM tablename1,tablename2 ; (Just joins everything)`
